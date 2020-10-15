@@ -65,13 +65,70 @@
         </div>
       </div>
     </div>
+    <div id="footer" class="container">
+      <div class="row">
+        <div
+          id="footer-community-engagement"
+          class="footer-super-component-label col-sm-1"
+        >
+          <div class="footer-sub-component-label">
+            <p><b>Community Demographics</b></p>
+          </div>
+        </div>
+        <div
+          id="footer-workplace-management"
+          class="footer-super-component-label col-sm-1"
+        >
+          <div class="footer-sub-component-label">
+            <p><b>Workplace Management</b></p>
+          </div>
+        </div>
+        <div
+          id="footer-organizational-readiness"
+          class="footer-super-component-label col-sm-1"
+        >
+          <div class="footer-sub-component-label">
+            <p><b>Organizational Readiness Office</b></p>
+          </div>
+        </div>
+        <div
+          id="footer-talent-management"
+          class="footer-super-component-label col-sm-1"
+        >
+          <div class="footer-sub-component-label">
+            <p><b>Talent Management</b></p>
+          </div>
+        </div>
+        <div
+          id="footer-recruitment"
+          class="footer-super-component-label col-sm-1"
+        >
+          <div class="footer-sub-component-label">
+            <p><b>Recruitment</b></p>
+          </div>
+        </div>
+        <div
+          id="footer-career-pathways"
+          class="footer-super-component-label col-sm-1"
+        >
+          <div class="footer-sub-component-label">
+            <p><b>Career Pathways</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
 <style>
+  body {
+    background-image: url("images/HomeImage.jpeg");
+    background-position-y: -205px;
+  }
   h2,
   h3,
   p {
+    font-size: 18px;
     color: #ffffff;
   }
   div#header {
@@ -80,8 +137,10 @@
     height: 85px;
     opacity: 0.7;
   }
-  #header div.centre-div h2 {
+  #header div.centre-div h2,
+  #header div.centre-div h3 {
     margin-left: 40%;
+    margin-top: 32.5px;
   }
   div.centre-div li {
     margin-left: 50%;
@@ -90,5 +149,63 @@
   #dropdownMenuButton {
     background-color: #674c90;
     height: 100%;
+  }
+
+  #footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #072131;
+  }
+
+  #footer row {
+    padding-left: 150px;
+  }
+
+  #footer-community-engagement {
+    background-image: url("images/communityDemographics.jpeg");
+  }
+
+  #footer-workplace-management {
+    background-image: url("images/communityDemographics.jpeg");
+  }
+
+  #footer-organizational-readiness {
+    background-image: url("images/communityDemographics.jpeg");
+  }
+
+  #footer-talent-management {
+    background-image: url("images/communityDemographics.jpeg");
+  }
+
+  #footer-recruitment {
+    background-image: url("images/communityDemographics.jpeg");
+  }
+
+  #footer-career-pathways {
+    background-image: url("images/communityDemographics.jpeg");
+  }
+
+  .footer-super-component-label {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .footer-sub-component-label {
+    margin-top: 70px;
+    background-color: #674c90;
+    opacity: 0.9;
+    height: 55px;
+  }
+
+  .footer-sub-component-label p {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .footer-super-component-label {
+    height: 125px;
   }
 </style>
