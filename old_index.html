@@ -1,0 +1,473 @@
+<html>
+
+<!--
+    This page was created by Amanda Bernardo and inspired by a template from Chris Soueidan of Global Affairs Canada's InnoLab Group in the SIAI Division (innolab.site).
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Change Management Office GCpedia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+
+
+        /*==========INCLUDE CUSTOM CSS right here==============*/
+
+.parallax {
+    /* The image used */
+    background-image: url("");
+
+    /* Set a specific height */
+    min-height: 425px; 
+
+.modalLink{color:#DA797A !important;cursor: pointer !important;}
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position-y: top;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{margin-bottom:20px !important}
+ul{margin-left:40px !important; color:#000}
+.light-link{color:#DA797A !important;}
+
+.btn-styling {
+background-color: rgba( 255, 255, 255, 0.3);
+box-shadow: 0px 7px 20px;
+border: none;
+}
+
+
+.ul {
+     list-style-type:none;
+     margin: 0;
+     padding: 0;
+}
+
+#nav li a {
+padding: 0px 40px;
+color: #ffffff;
+font-family: 'Lato', sans-serif;
+font-weight: 400;
+font-size: 20px;
+}
+
+
+.cta-btn {
+background-color: rgba(255, 255, 255, 0.2);
+color: #ffffff;
+font-family: 'Lato',sans-serif;
+font-weight: 700;
+font-size: 25px;
+padding: 20px 40px;
+transition: all .2s;
+}
+
+.cta-btn:hover {
+background-color: #329144;
+border: 2px solid #ffffff;
+color: #ffffff;
+text-decoration: none;
+}
+
+.register-btn {
+background-color: #329144;
+font-family: 'Lato', sans-serif;
+font-size: 15px;
+font-weight: 700;
+padding: 10px 20px;
+transition: all .2s ease;
+color: #fff;
+margin-bottom: -35px;
+}
+
+.register-btn:hover {
+background-color: #fff;
+color: #329144;
+border: 1px solid #329144;
+}
+
+.fade-bg {
+background-image: url("http://www.gcpedia.gc.ca/gcwiki/images/9/90/Fade-Proper-NextGenWeb.png");
+background-position: center;
+background-size: cover;
+}
+
+.section-2 {
+background-image: url("http://www.gcpedia.gc.ca/gcwiki/images/d/d8/DA_Background_Container.png");
+background-position: center;
+background-size: cover;
+}
+
+/* vendor prefixes removed for clarity */
+
+.ribbon {
+    width: 350px;
+    margin: 10px auto;
+    padding: 0 10px 0;
+    padding-top: 20px!important;
+    position: relative;
+    color: #444;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.ribbon h3 {
+    display: block;
+    height: 30px;
+    line-height: 1.3;
+    width: 360px;
+    margin: 0;
+    padding: 5px 10px;
+    position: relative;
+    left: -16px;
+    top: -12px;
+    color: #fff;
+    background: #41b655;
+    background: linear-gradient(top, #383838 0%, #262626 100%);
+    border-radius: 2px 2px 0 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+.ribbon h3::before,
+.ribbon h3::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -11px;
+    z-index: -10;
+    border: 5px solid;
+    border-color: #242424 transparent transparent transparent;    
+}
+.ribbon h3::before {left: 0;}
+.ribbon h3::after {right: 0;}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 20%;
+    padding: 5px;
+}
+
+    </style>
+</head>
+
+
+<body>
+
+<section class="super-body">
+
+
+<!-- Top Section -->
+	<div class="parallax"></div>
+        <div style="padding-bottom: 0px; margin-top: -380px;">
+             <div style="text-align:right; padding-right: 100px; margin-bottom: 75px; background-color: rgba(255, 255, 255, 0.2);">
+                  <ul id="nav" style="position: relative; bottom: 15px">
+                        <li><a class="navbar-brand" href="/wiki/Main_Page"><span style="font-family: Helvetica,Arial,sans-serif; padding: 10px; bottom: -30px; position: relative;"><span style="font-weight:800">GC</span>pedia</span></a></li>
+                       <li style="display: inline;"><a href="#">Home</a></li>
+                       <li style="display: inline;"><a href="https://www.gcpedia.gc.ca/wiki/CSPSDA_Foundations">Foundations</a></li>          
+                       <li style="display: inline;"><a href="https://www.gcpedia.gc.ca/wiki/CSPSDA_Premium">Premium</a></li> 
+                       <li style="display: inline;"><a href="https://www.gcpedia.gc.ca/wiki/CSPSDA_Leadership">Leadership</a></li>             
+                       <li style="display: inline;"><a href="#ContactDrop">Contact us</a></li>
+                       <li style="display: inline;"><a href="https://www.gcpedia.gc.ca/wiki/EFPC_Acad%C3%A9mie_du_Num%C3%A9rique">FR</a></li>
+                 </ul>
+
+</div>
+<div class="container">
+</BR>
+</div>
+</BR>
+       <section style="width:100%; padding-top: 10px; padding-bottom: 45px">
+          <div style="width:49.5%; display: inline-block">
+               <p></p>
+          </div>
+          <div style="width:49.5%; display: inline-block; padding-right: 100px; padding-bottom: 20px">
+        </div>
+
+ 	        
+      	        
+        <!----------------------------------------------------- Section 1 ------------------------------------------------------->
+
+<section style="width:100%; padding-top: 200px; padding-bottom: 35px">
+ <div style="width:49.5%; display: inline-block; text-align:center; vertical-align: top">
+                <img style="width: 70%; margin-top: 50px" src="https://www.gcpedia.gc.ca/gcwiki/images/e/e6/Team_photo_Da.png" alt="Photo of CSPS Digital Academy team members"><br><br>
+<br>
+<p style="font-family: 'Lato', sans-serif; font-weight:400; color:#050505; text-align:center; font-size: 16px;"> The CSPS Digital Academy is made up of a group of talented public servants, working
+<br>
+from coast to coast, who embody and promote <a href="https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html" class="light-link"><strong>Canada's Digital Standards</strong></a> 
+<br>
+in order to deliver the programs, policies, and services that Canadians need and 
+<br>
+expect in today's digital age.
+<br><br>
+<p><a href="https://twitter.com/DigiAcademyCAN" class="btn btn-primary">Follow us on Twitter</a>
+</p>
+ </div>
+
+              <div style="width:49.5%; display: inline-block; padding-right: 100px;">
+<h2 style="font-family: 'Lato', sans-serif; font-weight:700; color:#050505; font-size: 28px; padding-bottom: 15px"><span style="font-family: 'Lato', sans-serif; font-weight: 300;">Welcome to the Canada School of Public Service</span><br>Digital Academy </h2>
+
+<p style="font-family: 'Lato', sans-serif; font-weight:400; color:#050505; font-size: 16px;">Founded by the Canada School of Public Service (CSPS), the Digital Academy teaches Canada's federal public servants the digital skills, approaches, and mindsets needed to transform public services in today's digital age. <strong>Our GCPedia page enables you to learn more about our offerings, how you can apply, and where to obtain additional information. </strong>
+<br><br>
+<a href="https://www.gcpedia.gc.ca/wiki/CSPSDA_Foundations" class="light-link"><strong>Digital Foundations</strong></a>  stream offers basic learning intended for all public servants. It aims to provide a fundamental understanding of digital trends, tools and approaches in order to create a foundation upon which more complex learning relies. 
+<br><br>
+<a href="https://www.gcpedia.gc.ca/wiki/CSPSDA_Premium" class="light-link"><strong>Premium</strong></a> delivers rapid upskilling in digital innovation through training, coaching, community and industry support, and offers specialized learning intended for public service practitioners seeking focused, practical training in 4 key learning areas: data, design, artificial intelligence and machine learning, and development operations (DevOps). As part of this learning, learners will explore an organizational problem and learn new ways of problem solving that will lead to the development of user-centered solutions.
+<br><br>
+<a href="https://www.gcpedia.gc.ca/wiki/CSPSDA_Leadership" class="light-link"><strong>Digital Leadership</strong></a> programming offers improved leadership capacity intended for executives leading digitally-enabled design and delivery. It aims to equip leaders with new knowledge and management skills that will allow teams to adopt the mindsets and culture needed to adapt to a digital-first model. A Leadership cohort also runs concurrently with the Premium stream to support Premium learners’ managers.
+
+<br><br>
+</p>
+
+<p><a href="https://da-an.us3.list-manage.com/subscribe?u=9e5810d743bf898c302d3c312&id=bbc8bab3e7" class="btn btn-primary">Sign-up to our newsletter</a>
+</p>
+</div>
+</section>
+<section id="ApplyDrop" style="padding-bottom: 35px;width: 100%;" class="section-2">
+    <section style="/* width:100%; */padding-top: 20px;padding-bottom: 20px;/* padding-left: 100px; */">
+        <div style="width: 100%;display: inline-block;text-align:center;vertical-align: top;">
+            <h2 style="font-family: 'Lato', sans-serif; font-weight:700; color:#ffffff; font-size: 28px;"><span
+                    style="font-family: 'Lato', sans-serif; font-weight: 300;">Join us at the CSPS Digital
+                    Academy</span><br>Learn more about our learning offerings</h2>
+            <p style="font-family: 'Lato', sans-serif; font-weight:400; color:#ffffff; font-size: 16px;">
+                The Digital Academy's learning offerings are open to all public servants,
+<br>
+ with Premium and its corresponding Leadership stream organized in cohorts - a group
+<br>
+ of learners banded together over a period of time to build community, foster creativity, and encourage greater progress.
+                <br><br>
+                We welcome all learners regardless of race, ethnicity, religion, sexual orientation, gender identity or
+<br>
+expression, national origin, disability, age, veteran status, marital status, pregnancy or family commitment.
+            </p>
+            <br>
+        </div>
+    </section>
+    <!----------------------------------------------------- Section 5 ------------------------------------------------------->
+    <section style="width:100%;padding-top: 10px;padding-bottom: 20px;position:relative;" ,="" class="section-5">
+        <div style="display:flex;flex-direction:row;justify-content: center;">
+            <a style="width: 33.3%;position:relative;" href="https://www.gcpedia.gc.ca/wiki/CSPSDA_Foundations">
+                <img style="width:100%" src="https://www.gcpedia.gc.ca/gcwiki/images/e/ec/Foundations.png"
+                    alt="Person reading, graphic labelled 'Foundations'">
+            </a>
+            <a style="width: 33.3%;position:relative;" href="https://www.gcpedia.gc.ca/wiki/CSPSDA_Premium">
+                <img style="width:100%" src="https://www.gcpedia.gc.ca/gcwiki/images/2/23/Premium.png"
+                    alt="team working at table, graphic labelled 'Premium''">
+            </a>
+            <a style="width: 33.3%;position:relative;" href="https://www.gcpedia.gc.ca/wiki/CSPSDA_Leadership">
+                <img style="width:100%" src="https://www.gcpedia.gc.ca/gcwiki/images/d/dd/Leadership_stream.png"
+                    alt="leader speaking to team, graphic labelled 'Leadership'">
+            </a>
+        </div>
+    </section>
+</section>
+<!----------------------------------------------------- Section 1 ------------------------------------------------------->
+      <section style="width:100%; padding-top: 10px; padding-bottom: 20px">
+  
+          <div style="width:49.5%; display: inline-block; padding-left: 100px;">
+<h2 style="font-family: 'Lato', sans-serif; font-weight:700; color:#050505; font-size: 28px;"><span style="font-family: 'Lato', sans-serif; font-weight: 300;"><strong>CSPS Digital Academy Learning and #GCDigital Community Events</h2></strong>
+<p style="font-family: 'Lato', sans-serif; font-weight:400; color:##050505; font-size: 16px;">
+</p>
+<br>
+<br>
+To help reduce the spread of COVID-19, all Canada School of Public Service learning activities, including classroom and online courses, events and other programs, have been suspended until April 10, 2020. The GCcampus system has also been taken offline to minimize the draw on government networks.
+              </p>
+          </div>
+
+<div style="width:49.5%; display: inline-block; vertical-align: top; text-align: center; margin-top: 40px ">
+              <img style="width: 70%" src="https://www.gcpedia.gc.ca/gcwiki/images/5/51/Events_graphic.png" alt="person streaming event on phone"/>
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        form {width: 70%;margin: 0 auto}
+</style>
+<div id="mc_embed_signup">
+<form action="https://da-an.us3.list-manage.com/subscribe/post?u=9e5810d743bf898c302d3c312&amp;id=bbc8bab3e7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h2>Subscribe to the CSPS Digital Academy Newsletter</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address<span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group input-group">
+    <strong>Language Preference </strong>
+    <ul><li><input type="radio" value="English" name="ENGLISH" id="mce-ENGLISH-0"><label for="mce-ENGLISH-0">English</label></li>
+</ul>
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9e5810d743bf898c302d3c312_bbc8bab3e7" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<!--End mc_embed_signup-->
+
+
+      </section>
+      </section>
+<!----------------------------------------------------- Section 4 ------------------------------------------------------->
+
+<section id="ContactDrop" style="padding: 70px 0px; background-color: #3F2A56; ;width: 100%">
+<div style="text-align: center; font-family: 'Lato',sans-serif; color: #ffffff">
+   <p style="font-size:19px; width: 40%; margin: auto; padding-bottom: 20px">Connect with the CSPS Digital Academy</p>
+Have a question about one of our learning offerings, platforms, or events? 
+<br>
+Want to engage or partner with us?
+<br><br>
+<br>
+<br>
+</div>
+     <div style="text-align: center;">
+          <a href="mailto:csps.digitalacademy-academiedunumerique.efpc@canada.ca?subject=Question on CSPS Digital Academy Premium" class="cta-btn">
+              Contact Us
+          </a>
+<!--End mc_embed_signup-->
+     </div>
+</section>
+
+<!----------------------------------------------------- Footer ------------------------------------------------------->
+      
+<section style="padding: 20px 0px;display: flex;align-items: baseline;justify-content: space-between;">
+    <div style="width: 15%; display: inline-block; margin-left: 30px;">
+  <img style="width: 70%" src="https://www.canada.ca/content/dam/canada/tbs-sct/migration/hgw-cgf/oversight-surveillance/communications/fip-pcim/images/spec/T130-Canada.png" alt="">
+</div>
+<div style="width: 25%; display: inline-block; margin-right: 30px;">
+  <img style="width: 70%" src="https://www.gcpedia.gc.ca/gcwiki/images/c/c5/School_Corporate_Signature.png" alt="">
+</div>
+</section>
+
+
+<!------------------- Modal ------------------->
+<div class="modal fade" id="DataModal" tabindex="-1" role="dialog" aria-labelledby="DataModalLabel" aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="DataModalLabel">Data</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+The Data stream provides a survey of the concepts and skills essential for becoming a data practitioner. This includes a review of the different parts of the data pipeline and relevant skills and concepts required to work with each part of this pipeline, from data collection to data presentation. Specific topics including data architectures, measures and metrics, data validation and data visualization.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+</div>
+
+<!------------------- Modal ------------------->
+<div class="modal fade" id="DesignModal" tabindex="-1" role="dialog" aria-labelledby="DesignModalLabel" aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="DesignModalLabel">Design</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+The Design stream will allow learners to better understand design as a practice. The course will equip learners with knowledge and skills in the areas of ethical and inclusive service design, user research, problem definition and solution prototyping, content design, usability testing and iteration, measuring for impact, partnership building, and stewardship.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+</div>
+
+<!------------------- Modal ------------------->
+<div class="modal fade" id="AIMLModal" tabindex="-1" role="dialog" aria-labelledby="AIMLModalLabel" aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="AIMLModalLabel">AI/ML</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+The AI/ML stream provides an overview of the concepts and skills required to become a data scientist. It will include fundamental concepts common to data work (data preparation, data visualization) and an overview of the main branches of machine learning, including supervised learning (classification and value estimation) and unsupervised learning (association rules and clustering). An emphasis in the AI/ML stream will be on exercises in R where learners will implement techniques learned during specialized learning using relevant datasets and specific R libraries.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+</div>
+
+<!------------------- Modal ------------------->
+<div class="modal fade" id="DevelopmentModal" tabindex="-1" role="dialog" aria-labelledby="DevelopmentModalLabel" aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="DevelopmentModalLabel">Development</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+The Development stream will equip learners with the knowledge and skills in the areas of front end development including version control (Git), command line (Bash,SSH), HTML/CSS, JavaScript and Python. Participants will learn how-to use open source tools to build a POC (Proof of Concept) and an MVP (Minimum-Viable Product). The course will also review the Agile development methodology, accessibility standards, and basic security concepts.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+</div>
+
+<!------------------- Modal ------------------->
+<div class="modal fade" id="DevOpsModal" tabindex="-1" role="dialog" aria-labelledby="DevOpsModalLabel" aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="DevOpsModalLabel">DevOps</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+The DevOps stream includes the latest principles and practices from the DevOps community in the Government of Canada and industry experts. By the end of this training, learners will be able to write scripts using Python, understand the nuances of Open Source Software as it relates to Software Developers and Operators, as well as build and deploy Continuous Integration and Continuous Deployment pipelines, and more.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+</div>
+
+</body>
+ 
+
+
+</html>
+{{DA-CSS}}
+
+[[Category:Digital Academy (CSPS) | Académie du numérique (EFPC)]]
