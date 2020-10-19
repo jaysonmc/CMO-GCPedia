@@ -34,9 +34,149 @@
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"
     ></script>
+
+    
+
+<style>
+  #super-body {
+    background-image: url("https://www.gcpedia.gc.ca/gcwiki/images/1/10/CMO-gcpedia-page1-mainpicture.jpeg");
+    background-position-y: -325px;
+    background-position-x: -375px;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-x: hidden;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10000;
+    background-color: #fff;
+    -webkit-transition: all .2s ease-in;
+    transition: all .5s ease-in;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  }
+  h2,
+  h3,
+  p {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  div#header {
+    width: 100%;
+    background-color: #674c90;
+    height: 85px;
+    opacity: 0.7;
+  }
+  #header div.centre-div h2,
+  #header div.centre-div h3 {
+    margin-left: 40%;
+    margin-top: 32.5px;
+  }
+
+  #digital-community-header {
+    width: 265px;
+}
+
+  #en-fr-header {
+    padding-right: 25px;
+  }
+
+  div.centre-div li {
+    margin-left: 50%;
+    margin-top: 50%;
+  }
+  #dropdownMenuButton {
+    background-color: #674c90;
+    height: 100%;
+  }
+
+  .dropdown-menu {
+    width: 225px;
+  }
+
+  .dropdown-item {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  #custom-footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #072131;
+  }
+
+  #custom-footer row {
+    padding-left: 150px;
+  }
+
+  #footer-community-engagement {
+    background-image: url("https://github.com/jaysonmc/CMO-GCPedia/blob/main/images/communityDemographics.jpeg?raw=true");
+  }
+
+  #footer-workplace-management {
+    background-image: url("https://github.com/jaysonmc/CMO-GCPedia/blob/main/images/workplaceManagement.jpeg?raw=true");
+  }
+
+  #footer-organizational-readiness {
+    background-image: url("https://github.com/jaysonmc/CMO-GCPedia/blob/main/images/organizationalReadiniess.jpeg?raw=true");
+  }
+
+  #footer-talent-management {
+    background-image: url("https://github.com/jaysonmc/CMO-GCPedia/blob/main/images/talentManagement.jpeg?raw=true");
+  }
+
+  #footer-recruitment {
+    background-image: url("https://github.com/jaysonmc/CMO-GCPedia/blob/main/images/recruitment.jpeg?raw=true");
+  }
+
+  #footer-career-pathways {
+    background-image: url("https://github.com/jaysonmc/CMO-GCPedia/blob/main/images/careerPathways.PNG?raw=true");
+  }
+
+  .footer-super-component-label {
+    margin-left: 1.75%;
+    margin-right: 1.75%;
+    background-size: contain;
+    width: 180px;
+  }
+
+  .footer-sub-component-label {
+    margin-top: 70px;
+    background-color: #674c90;
+    opacity: 0.9;
+    height: 55px;
+    width: 150px;
+  }
+
+  .footer-sub-component-label p {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .footer-super-component-label {
+    height: 125px;
+  }
+
+#mw-panel, #footer, #mw-head {
+  display: none;
+}
+
+</style>
+
   </head>
 
   <body>
+    <div id="super-body">
     <div id="header" class="container">
       <div class="row">
         <div class="col-md-1">
@@ -58,14 +198,14 @@
           </div>
         </div>
         <div class="col-md-10 centre-div">
-          <h2>Digital Community (IM/IT)</h2>
+          <h2 id="digital-community-header">Digital Community (IM/IT)</h2>
         </div>
         <div class="col-md-1 centre-div">
-          <h3>EN/FR</h3>
+          <h3 id="en-fr-header">EN/FR</h3>
         </div>
       </div>
     </div>
-    <div id="footer" class="container">
+    <div id="custom-footer" class="container">
       <div class="row">
         <div
           id="footer-community-engagement"
@@ -117,96 +257,6 @@
         </div>
       </div>
     </div>
+    </div>
   </body>
 </html>
-
-<style>
-  body {
-    background-image: url("images/HomeImage.jpeg");
-    background-position-y: -205px;
-  }
-  h2,
-  h3,
-  p {
-    font-size: 18px;
-    color: #ffffff;
-  }
-  div#header {
-    width: 100%;
-    background-color: #674c90;
-    height: 85px;
-    opacity: 0.7;
-  }
-  #header div.centre-div h2,
-  #header div.centre-div h3 {
-    margin-left: 40%;
-    margin-top: 32.5px;
-  }
-  div.centre-div li {
-    margin-left: 50%;
-    margin-top: 50%;
-  }
-  #dropdownMenuButton {
-    background-color: #674c90;
-    height: 100%;
-  }
-
-  #footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #072131;
-  }
-
-  #footer row {
-    padding-left: 150px;
-  }
-
-  #footer-community-engagement {
-    background-image: url("images/communityDemographics.jpeg");
-  }
-
-  #footer-workplace-management {
-    background-image: url("images/workplaceManagement.jpeg");
-  }
-
-  #footer-organizational-readiness {
-    background-image: url("images/organizationalReadiniess.jpeg");
-  }
-
-  #footer-talent-management {
-    background-image: url("images/talentManagement.jpeg");
-  }
-
-  #footer-recruitment {
-    background-image: url("images/recruitment.jpeg");
-  }
-
-  #footer-career-pathways {
-    background-image: url("images/careerPathways.webp");
-  }
-
-  .footer-super-component-label {
-    margin-left: 4%;
-    margin-right: 4%;
-    background-size: contain;
-  }
-
-  .footer-sub-component-label {
-    margin-top: 70px;
-    background-color: #674c90;
-    opacity: 0.9;
-    height: 55px;
-  }
-
-  .footer-sub-component-label p {
-    margin-top: 10px;
-    margin-left: 5px;
-  }
-
-  .footer-super-component-label {
-    height: 125px;
-  }
-</style>
