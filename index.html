@@ -36,19 +36,30 @@
     ></script>
 
     <style>
-      #super-body {
-        background-image: url("https://www.gcpedia.gc.ca/gcwiki/images/1/10/CMO-gcpedia-page1-mainpicture.jpeg");
-        background-position-y: -325px;
-        background-position-x: -375px;
-        position: fixed;
+      body {
         overflow-y: scroll;
         overflow-x: hidden;
         -ms-overflow-x: hidden;
+      }
+
+      a {
+        color: ivory;
+        text-decoration: none;
+      }
+
+      #landing-page {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/HomeImage.jpeg");
+        height: 950px;
+        background-position-y: -325px;
+        background-position-x: -375px;
         top: 0px;
         left: 0px;
         right: 0px;
         bottom: 0px;
-        z-index: 10000;
+      }
+
+      #super-body {
+        /*z-index: 10000;*/
         background-color: #fff;
         -webkit-transition: all 0.2s ease-in;
         transition: all 0.5s ease-in;
@@ -57,6 +68,7 @@
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
       }
+
       h2,
       h3,
       p {
@@ -108,16 +120,18 @@
         margin-left: 10px;
       }
 
-      #custom-footer {
+      #team-banner {
+        margin-top: 870px;
         padding-top: 10px;
         padding-bottom: 10px;
-        position: fixed;
-        bottom: 0;
         width: 100%;
         background-color: #072131;
+        top: 100vh;
+        transform: translateY(-100%);
+        width: 100%;
       }
 
-      #custom-footer row {
+      #team-banner row {
         padding-left: 150px;
       }
 
@@ -169,97 +183,180 @@
         height: 125px;
       }
 
+      #at-cmo {
+        width: 100%;
+        -webkit-box-sizing: inherit;
+        -moz-box-sizing: inherit;
+        box-sizing: inherit;
+      }
+
+      #at-cmo-banner {
+        height: 175px;
+        background-color: #674c90;
+      }
+
+      #at-cmo-banner p {
+        text-align: center;
+        font-size: 48px;
+        margin-top: -75px;
+      }
+
+      /* Commenting our gcpedia stuff */
       #mw-panel,
       #footer,
       #mw-head {
         display: none;
       }
     </style>
-    <script>
-      //alert('test');
-    </script>
   </head>
 
   <body>
     <div id="super-body">
-      <div id="header" class="container">
-        <div class="row">
-          <div class="col-md-1">
-            <div class="dropdown">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <p><b>Connect with us</b></p>
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Upcoming Events</a>
-                <a class="dropdown-item" href="#">What's happening with CMO?</a>
+      <div id="landing-page">
+        <div id="header" class="container">
+          <div class="row">
+            <div class="col-md-1">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <p><b>Connect with us</b></p>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Upcoming Events</a>
+                  <a class="dropdown-item" href="#"
+                    >What's happening with CMO?</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 centre-div">
+              <h2 id="digital-community-header">Digital Community (IM/IT)</h2>
+            </div>
+            <div class="col-md-1 centre-div">
+              <h3 id="en-fr-header">EN/FR</h3>
+            </div>
+          </div>
+        </div>
+        <div id="team-banner" class="container">
+          <div class="row">
+            <div
+              id="footer-community-engagement"
+              class="footer-super-component-label col-sm-1"
+            >
+              <div class="footer-sub-component-label">
+                <p>
+                  <b
+                    ><a
+                      href="http://www.gcpedia.gc.ca/wiki/Community_Demographics"
+                      >Community Demographics</a
+                    ></b
+                  >
+                </p>
+              </div>
+            </div>
+            <div
+              id="footer-workplace-management"
+              class="footer-super-component-label col-sm-1"
+            >
+              <div class="footer-sub-component-label">
+                <p>
+                  <b
+                    ><a
+                      href="https://www.gcpedia.gc.ca/wiki/Workplace_Management"
+                      >Workplace Management</a
+                    ></b
+                  >
+                </p>
+              </div>
+            </div>
+            <div
+              id="footer-organizational-readiness"
+              class="footer-super-component-label col-sm-1"
+            >
+              <div class="footer-sub-component-label">
+                <p>
+                  <b><a href="">Organizational Readiness Office</a></b>
+                </p>
+              </div>
+            </div>
+            <div
+              id="footer-talent-management"
+              class="footer-super-component-label col-sm-1"
+            >
+              <div class="footer-sub-component-label">
+                <p>
+                  <b
+                    ><a
+                      href="https://www.gcpedia.gc.ca/wiki/Talent_Management_for_the_IM-IT_Community"
+                      >Talent Management</a
+                    ></b
+                  >
+                </p>
+              </div>
+            </div>
+            <div
+              id="footer-recruitment"
+              class="footer-super-component-label col-sm-1"
+            >
+              <div class="footer-sub-component-label">
+                <p>
+                  <b
+                    ><a
+                      href="https://www.gcpedia.gc.ca/wiki/IFC_Recruitment_%26_Staffing"
+                      >Recruitment</a
+                    ></b
+                  >
+                </p>
+              </div>
+            </div>
+            <div
+              id="footer-career-pathways"
+              class="footer-super-component-label col-sm-1"
+            >
+              <div class="footer-sub-component-label">
+                <p>
+                  <b
+                    ><a
+                      href="http://www.gcpedia.gc.ca/wiki/IFC_Career_Development_Portal"
+                      >Career Pathways</a
+                    ></b
+                  >
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-md-10 centre-div">
-            <h2 id="digital-community-header">Digital Community (IM/IT)</h2>
-          </div>
-          <div class="col-md-1 centre-div">
-            <h3 id="en-fr-header">EN/FR</h3>
-          </div>
         </div>
       </div>
-      <div id="custom-footer" class="container">
+      <div id="at-cmo" class="container">
+        <div id="at-cmo-banner" class="row h-50">
+          <div class="col-md-3"></div>
+          <div class="col-md-6"><p>What's happening at the CMO</p></div>
+          <div class="col-md-3"></div>
+        </div>
         <div class="row">
-          <div
-            id="footer-community-engagement"
-            class="footer-super-component-label col-sm-1"
-          >
-            <div class="footer-sub-component-label">
-              <p><b><a href="http://www.gcpedia.gc.ca/wiki/Community_Demographics">Community Demographics</a></b></p>
-            </div>
+          <div class="col-md-6">
+            <a
+              class="twitter-timeline"
+              data-width="100%"
+              data-height="750"
+              data-theme="dark"
+              href="https://twitter.com/DigitalCDN?ref_src=twsrc%5Etfw"
+              >Tweets by DigitalCDN</a
+            >
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
           </div>
-          <div
-            id="footer-workplace-management"
-            class="footer-super-component-label col-sm-1"
-          >
-            <div class="footer-sub-component-label">
-              <p><b><a href="https://www.gcpedia.gc.ca/wiki/Workplace_Management">Workplace Management</a></b></p>
-            </div>
-          </div>
-          <div
-            id="footer-organizational-readiness"
-            class="footer-super-component-label col-sm-1"
-          >
-            <div class="footer-sub-component-label">
-              <p><b><a href="">Organizational Readiness Office</a></b></p>
-            </div>
-          </div>
-          <div
-            id="footer-talent-management"
-            class="footer-super-component-label col-sm-1"
-          >
-            <div class="footer-sub-component-label">
-              <p><b><a href="https://www.gcpedia.gc.ca/wiki/Talent_Management_for_the_IM-IT_Community 
-CIO suite: https://www.gcpedia.gc.ca/wiki/CIO_Suite">Talent Management</a></b></p>
-            </div>
-          </div>
-          <div
-            id="footer-recruitment"
-            class="footer-super-component-label col-sm-1"
-          >
-            <div class="footer-sub-component-label">
-              <p><b><a href="https://www.gcpedia.gc.ca/wiki/IFC_Recruitment_%26_Staffing">Recruitment</a></b></p>
-            </div>
-          </div>
-          <div
-            id="footer-career-pathways"
-            class="footer-super-component-label col-sm-1"
-          >
-            <div class="footer-sub-component-label">
-              <p><b><a href="http://www.gcpedia.gc.ca/wiki/IFC_Career_Development_Portal">Career Pathways</a></b></p>
-            </div>
+          <div class="col-md-6">
+            <h1>Coming soon</h1>
           </div>
         </div>
       </div>
