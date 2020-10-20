@@ -52,14 +52,17 @@
         height: 950px;
         background-position-y: -325px;
         background-position-x: -375px;
+      }
+
+      #super-body {
+        position: fixed;
         top: 0px;
         left: 0px;
         right: 0px;
         bottom: 0px;
-      }
-
-      #super-body {
-        /*z-index: 10000;*/
+        z-index: 10000;
+        overflow-y: scroll;
+        overflow-x: hidden;
         background-color: #fff;
         -webkit-transition: all 0.2s ease-in;
         transition: all 0.5s ease-in;
@@ -208,6 +211,25 @@
         display: none;
       }
     </style>
+    <script>
+      window.twttr = (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+          t._e.push(f);
+        };
+
+        return t;
+      })(document, "script", "twitter-wjs");
+    </script>
   </head>
 
   <body>
@@ -349,11 +371,6 @@
               href="https://twitter.com/DigitalCDN?ref_src=twsrc%5Etfw"
               >Tweets by DigitalCDN</a
             >
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
           </div>
           <div class="col-md-6">
             <h1>Coming soon</h1>
