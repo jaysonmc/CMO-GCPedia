@@ -126,14 +126,44 @@
         margin-bottom: 45px;
       }
 
-      div#header {
-        background-color: #674c90;
-        height: 250px;
-        padding-top: 85px;
+      div#header,
+      #sub-header {
         margin-bottom: 35px;
-        background-image: url("");
-        width: 80%;
+      }
+
+      div#header {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/banner-background.jpg");
+        height: 375px;
         margin-left: 10%;
+        width: 80%;
+      }
+
+      #header-label {
+        background-color: #363661;
+        height: 55px;
+        padding-top: 12px;
+      }
+
+      #header-label a {
+        font-size: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+
+      #header-label-right {
+        float: right;
+      }
+
+      #header-label-left {
+        float: left;
+      }
+
+      #sub-header {
+        height: 320px;
+        padding-top: 125px;
+        background-color: #363661;
+        width: 100%;
+        opacity: 0.9;
       }
 
       #community-demographics-label {
@@ -162,7 +192,18 @@
   <body>
     <div id="super-body">
       <div id="header">
-        <h1 class="text-center">IM-IT Functional Community (IFC)</h1>
+        <div id="header-label">
+          <div id="header-label-left">
+            <a href="#"><b>GC</b>pedia</a>
+            <a href="#"><b>Home</b></a>
+          </div>
+          <div id="header-label-right">
+            <a href="#">Français</a>
+          </div>
+        </div>
+        <div id="sub-header">
+          <h1 class="text-center">IM-IT Functional Community (IFC)</h1>
+        </div>
       </div>
       <div class="container">
         <div class="row">
