@@ -42,10 +42,33 @@
         -ms-overflow-x: hidden;
       }
 
+      .team-label a {
+        text-decoration: none;
+      }
+
       a,
       a:visited {
         color: ivory;
-        text-decoration: none;
+        text-decoration: underline;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      li {
+        font-size: 20px;
+        color: #ffffff;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      h1 {
+        color: #ffffff;
       }
 
       #super-body {
@@ -66,30 +89,12 @@
         -ms-overflow-style: -ms-autohiding-scrollbar;
       }
 
-      h1 {
-        color: #ffffff;
-      }
-
-      #imit-title {
-        margin-bottom: 45px;
-      }
-
-      div#header {
-        background-color: #674c90;
-        height: 210px;
-        padding-top: 65px;
-        margin-bottom: 35px;
-        /*background-image: url("");*/
-        width: 70%;
-        margin-left: 15%;
-      }
-
-      #team-grid {
-        margin-top: 40px;
+      .team-label {
+        height: 190px;
       }
 
       .team-label {
-        padding-top: 50px;
+        padding-top: 66px;
       }
 
       .footer-sub-component-label {
@@ -102,9 +107,47 @@
         height: 55px;
       }
 
+      .team-grid-row-subtext {
+        margin-top: 15px;
+        margin-bottom: 25px;
+      }
+
+      .team-label-row {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .team-grid-row {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      #imit-title {
+        margin-bottom: 45px;
+      }
+
+      div#header {
+        background-color: #674c90;
+        height: 250px;
+        padding-top: 85px;
+        margin-bottom: 35px;
+        background-image: url("");
+        width: 80%;
+        margin-left: 10%;
+      }
+
       #community-demographics-label {
-        height: 175px;
         background-image: url("https://github.com/jaysonmc/CMO-GCPedia/blob/main/images/communityDemographics.jpeg?raw=true");
+      }
+
+      #custom-footer {
+        height: 240px;
+        padding-top: 5px;
+        background-color: #674c90;
+        width: 80%;
+        margin-left: 10%;
+        background-color: #1d2c4c;
+        margin-top: 50px;
       }
 
       /* Commenting our gcpedia stuff */
@@ -136,31 +179,138 @@
             leaders
           </p>
         </div>
-        <div class="row" id="team-grid">
+        <div class="row team-grid-row">
           <div class="col-md-4">
-            <div class="team-label" id="community-demographics-label">
-              <p class="footer-sub-component-label"><a href="https://www.gcpedia.gc.ca/wiki/Workplace_Management">Workplace Management</a></p>
+            <div class="row team-label-row">
+              <div class="team-label" id="community-demographics-label">
+                <p class="footer-sub-component-label">
+                  <a href="https://www.gcpedia.gc.ca/wiki/Workplace_Management"
+                    >Workplace Management</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="row team-label-row">
+              <p class="team-grid-row-subtext">
+                Fostering a strong sense of community and pride is part of our
+                work. Through out community management initiatives, we provide
+                recognition and leadership across government departments to
+                transform and strengthen digital capacity and services for
+                Canadians.
+              </p>
             </div>
           </div>
           <div class="col-md-4">
-            One of three columns
+            <div class="row team-label-row">
+              <div class="team-label" id="community-demographics-label">
+                <p class="footer-sub-component-label">
+                  <a href="https://www.gcpedia.gc.ca/wiki/Workplace_Management"
+                    >Community Demographics</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="row team-label-row">
+              <p class="team-grid-row-subtext">
+                Short blurb describing what this page is. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.
+              </p>
+            </div>
           </div>
           <div class="col-md-4">
-            One of three columns
+            <div class="row team-label-row">
+              <div class="team-label" id="community-demographics-label">
+                <p class="footer-sub-component-label">
+                  <a href="https://www.gcpedia.gc.ca/wiki/Workplace_Management"
+                    >Organizational Readiness and Outreach</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="row team-label-row">
+              <p class="team-grid-row-subtext">
+                Providing a strong foundation for effective HR practices and
+                organizational design is paramount for enabling our
+                organizations to deliver on their mandates.
+              </p>
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4">
-            One of three columns
+            <div class="row team-label-row">
+              <div class="team-label" id="community-demographics-label">
+                <p class="footer-sub-component-label">
+                  <a href="https://www.gcpedia.gc.ca/wiki/Workplace_Management"
+                    >Talent Management</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="row team-label-row">
+              <p class="team-grid-row-subtext">
+                Developing our digital talent has never been more important.
+                Talent management is a process that helps build sustained
+                excellence in the leadership within the organization.
+              </p>
+            </div>
           </div>
           <div class="col-md-4">
-            One of three columns
+            <div class="row team-label-row">
+              <div class="team-label" id="community-demographics-label">
+                <p class="footer-sub-component-label">
+                  <a href="https://www.gcpedia.gc.ca/wiki/Workplace_Management"
+                    >Recruitment</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="row team-label-row">
+              <p class="team-grid-row-subtext">
+                The recruitment program helps to attract and refer quality
+                candidates across the GC. We directly support the IM/IT
+                community, the Chief Information Officer of Canada as the
+                functional head of the IM/IT community and the Policy on Service
+                and Digital.
+              </p>
+            </div>
           </div>
           <div class="col-md-4">
-            One of three columns
+            <div class="row team-label-row">
+              <div class="team-label" id="community-demographics-label">
+                <p class="footer-sub-component-label">
+                  <a href="https://www.gcpedia.gc.ca/wiki/Workplace_Management"
+                    >Career Pathways</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="row team-label-row">
+              <p class="team-grid-row-subtext">
+                Short blurb describing what this page is. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit.
+              </p>
+            </div>
           </div>
         </div>
-
+      </div>
+      <div id="custom-footer">
+        <div class="row">
+          <div class="col-md-3">
+            <ul>
+              <li><b>Connect With Us!</b></li>
+              <li><a>Upcoming Events</a></li>
+              <li><a>Whats Happening at the CMO</a></li>
+              <li><a>Follow us on Twitter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li><b>Have Questions?</b></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6"></div>
         </div>
       </div>
     </div>
