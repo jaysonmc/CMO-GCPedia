@@ -1,0 +1,421 @@
+<html>
+  <!--
+    This page was created by Jayson McIntosh
+-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>Change Management Office GCpedia</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        -ms-overflow-x: hidden;
+      }
+
+      .team-label a {
+        text-decoration: none;
+      }
+
+      a,
+      a:visited {
+        color: ivory;
+        text-decoration: underline;
+      }
+
+      .footer-sub-component-label:hover a {
+        color: ivory;
+        text-decoration: underline;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      ul {
+        list-style-type: none;
+        list-style: none;
+      }
+
+      #custom-footer li {
+        font-size: 20px;
+        color: #ffffff;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      h1 {
+        color: #ffffff;
+      }
+
+      h4 {
+        font-weight: 900;
+      }
+
+      #super-body {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 10000;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: #fff;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.5s ease-in;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+      }
+
+      .team-label {
+        height: 190px;
+        padding-top: 130px;
+        background-size: contain;
+      }
+
+      .footer-sub-component-label {
+        padding-top: 17.5px;
+        text-align: center;
+        width: 100%;
+        margin-top: 70px;
+        background-color: #674c90;
+        opacity: 0.9;
+        height: 55px;
+      }
+
+      .team-grid-row-subtext {
+        margin-top: 15px;
+        margin-bottom: 25px;
+      }
+
+      .team-label-row {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .team-grid-row {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      #imit-title {
+        margin-bottom: 45px;
+      }
+
+      div#header,
+      #sub-header {
+        margin-bottom: 35px;
+      }
+
+      #imit-title ul li {
+          color: black;
+          font-size: 16px;
+      }
+
+      div#header {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/talentManagementBanner.jpeg");
+        height: 375px;
+        margin-left: 10%;
+        width: 80%;
+      }
+
+      #header-label {
+        background-color: #363661;
+        height: 55px;
+        padding-top: 12px;
+      }
+
+      #header-label a {
+        font-size: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+
+      #header-label-right {
+        float: right;
+      }
+
+      #header-label-left {
+        float: left;
+      }
+
+      #sub-header {
+        height: 320px;
+        padding-top: 125px;
+        background-color: #363661;
+        width: 100%;
+        opacity: 0.9;
+      }
+
+      #community-management-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/communityManagement.jpeg");
+      }
+
+      #community-demographics-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/communityDemographics.jpeg");
+      }
+
+      #organizational-readiness-and-outreach-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/organizationalReadiniess.jpeg");
+      }
+
+      #talent-management-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/talentManagement.jpeg");
+      }
+
+      #recuitment-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/recruitment.jpeg");
+      }
+
+      #career-pathways-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/careerPathways.png");
+      }
+
+      #custom-footer {
+        height: 240px;
+        padding-top: 5px;
+        background-color: #674c90;
+        width: 80%;
+        margin-left: 10%;
+        background-color: #1d2c4c;
+        margin-top: 50px;
+      }
+
+      #breadcrumb {
+        font-size: 18px;
+        margin-left: 75px;
+        margin-top: 80px;
+      }
+
+      #breadcrumb p {
+        display: inline-block;
+        color: white;
+      }
+
+      #accordion {
+          margin-top: 25px;
+      }
+
+      #accordion button h4 {
+        color: black;
+      }
+
+      #accordion .card {
+          background-color: #e9e4f0;
+          padding-left: 15px;
+          padding-right: 15px;
+      }
+
+      /* Commenting our gcpedia stuff */
+      #mw-panel,
+      #footer,
+      #mw-head {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="super-body">
+      <div id="header">
+        <div id="header-label">
+          <div id="header-label-left">
+            <a href="https://www.gcpedia.gc.ca"><b>GC</b>pedia</a>
+            <a href="#"><b>Home</b></a>
+          </div>
+          <div id="header-label-right">
+            <a href="#">Français</a>
+          </div>
+        </div>
+        <div id="sub-header">
+          <h1 class="text-center"><b>IM-IT Functional Community (IFC)</b></h1>
+          <div id="breadcrumb">
+            <a href="#">Home</a>
+            <p>&#9654;</p>
+            <a href="#">Talent Management</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h4 id="imit-title">What is Talent Management (TM) at OCIO?</h4>
+          <p>
+            Talent management is a process that helps build sustained excellence in the leadership within the organization.
+            For talent management to be effective, employees must be placed in the positions that optimize their skills and goals.
+            The aim is for everyone to reach and exceed their potential, while developing experiences.
+          </p>
+          <p>
+              The Community Management Office believes that Talent Management:
+              <ul>
+                  <li>Helps in Employee's retention</li>
+                  <li>Provides support to succession planning for the new generation of executives and</li>
+                  <li>Contributes in building a strong Digital community in the GC</li>
+              </ul>
+          </p>
+          <hr />
+          <h4>What do we offer?</h4>
+          <p>If you are looking to staff a CIO or an Executive position in the digital community, we are happy to assist in your search with the <b><u>Referral Process!</u></b></p>
+          <p>Each December, we solicit and gather a list of candidates, submitted by Human Resources Advisors, CIOs and/or ADMs from many organizations,
+              at the EX-01 to the EX-03 levels who are ready for Potential interdepartmental opportunities, Learning, Development and networking activities and/or advancement. 
+              This roundtable is called <b><u>EXposition</u></b>.
+          </p>
+          <p>Similarly, we undertake the same process for those at the EX equivalent and EX minus one level in June. This is known as the <b><u>EXtend EXposition.</u></b></p>
+          <p>The <b><u>Digital Employment Equity Mentoring Program</u></b> was created to promote a more diverse and representative group of senior executives for digital leadership 
+            in the Government of Canada</p>
+            <p>We offer networking activities to all referred candidates and are invited to attend and participate. These activities can be organized by the TM team or <b><u>other partners.</u></b></p>
+        </div>
+        <div class="row team-grid-row">
+          <div class="col-md-4">
+            <div class="row team-label-row">
+              <div
+                class="team-label"
+                id="organizational-readiness-and-outreach-label"
+              >
+                <p class="footer-sub-component-label">
+                  <a href="#">Referral Process</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row team-label-row">
+              <div class="team-label" id="recuitment-label">
+                <p class="footer-sub-component-label">
+                  <a href="https://www.gcpedia.gc.ca/wiki/Workplace_Management"
+                    >Recruitment</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row team-label-row">
+              <div class="team-label" id="career-pathways-label">
+                <p class="footer-sub-component-label">
+                  <a href="https://www.gcpedia.gc.ca/wiki/Workplace_Management"
+                    >Career Pathways</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row team-grid-row">
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <div class="row team-label-row">
+              <div class="team-label" id="community-management-label">
+                <p class="footer-sub-component-label">
+                  <a href="https://www.gcpedia.gc.ca/wiki/Workplace_Management"
+                    >Community Management</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <div class="row team-label-row">
+              <div class="team-label" id="community-demographics-label">
+                <p class="footer-sub-component-label">
+                  <a href="https://www.gcpedia.gc.ca/wiki/Workplace_Management"
+                    >Community Demographics</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h4>Annual Talent Management Cycle at OCIO</h4>
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>
+                    The Talent Management (TM) annual cycle place the different arcitivies on a calendar from the data extraction and data collection to the 
+                    identification of a pool of potential candidates qualified as ready for lateral movement or ready for advancement. The cycle focuses more on the 
+                    <b><u>EXposition</u></b> and the <u><b>Exend EXposition</b></u> steps whereas the <b><u>Referral process</u></b> and the <b><u>Digital Employment Equity 
+                    Mentoring Program</u></b> are fluid and ongoing throughout the year.
+                  </p>
+                  <img id="TmInfographic" src="https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/TmInfographic.PNG" />
+                 </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h4>Talent Management (TM) Pipeline at OCIO</h4>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div id="custom-footer">
+        <div class="row">
+          <div class="col-md-4">
+            <ul>
+              <li><b>Connect With Us!</b></li>
+              <li><a>Upcoming Events</a></li>
+              <li><a>Whats Happening at the CMO</a></li>
+              <li><a>Follow us on Twitter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li><b>Have Questions?</b></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-5"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
