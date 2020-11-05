@@ -1,0 +1,671 @@
+<html>
+  <!--
+    This page was created by Jayson McIntosh
+-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>Change Management Office Recruitment GCpedia</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+      body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        -ms-overflow-x: hidden;
+      }
+
+      .team-label a {
+        text-decoration: none;
+      }
+
+      a,
+      a:visited {
+        color: ivory;
+        text-decoration: underline;
+      }
+
+      .footer-sub-component-label:hover a {
+        color: ivory;
+        text-decoration: underline;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      ul {
+        list-style-type: none;
+        list-style: none;
+      }
+
+      #custom-footer li {
+        font-size: 20px;
+        color: #ffffff;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      h1 {
+        color: #ffffff;
+      }
+
+      h4 {
+        font-weight: 900;
+      }
+
+      hr {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        border: 0;
+        clear: both;
+        display: block;
+        width: 96%;
+        background-color: black;
+        height: 1px;
+      }
+
+      #super-body {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 10000;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: #fff;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.5s ease-in;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+      }
+
+      .team-label {
+        height: 190px;
+        padding-top: 130px;
+        background-size: contain;
+      }
+
+      .footer-sub-component-label {
+        padding-top: 17.5px;
+        text-align: center;
+        width: 100%;
+        margin-top: 70px;
+        background-color: #674c90;
+        opacity: 0.9;
+        height: 55px;
+      }
+
+      .team-grid-row-subtext {
+        margin-top: 15px;
+        margin-bottom: 25px;
+      }
+
+      .team-label-row {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .team-grid-row {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      #imit-title {
+        margin-bottom: 45px;
+      }
+
+      div#header,
+      #sub-header {
+        margin-bottom: 35px;
+      }
+
+      #imit-title ul li {
+        color: black;
+        font-size: 16px;
+      }
+
+      div#header {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/talentManagementBanner.jpg");
+        height: 375px;
+        margin-left: 10%;
+        width: 80%;
+        background-size: stretch;
+        background-position-y: -150px;
+      }
+
+      #header-label {
+        background-color: #363661;
+        height: 55px;
+        padding-top: 12px;
+      }
+
+      #header-label a {
+        font-size: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+
+      #header-label-right {
+        float: right;
+      }
+
+      #header-label-left {
+        float: left;
+      }
+
+      #sub-header {
+        height: 320px;
+        padding-top: 125px;
+        background-color: #363661;
+        width: 100%;
+        opacity: 0.9;
+      }
+
+      #community-management-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/communityManagement.jpeg");
+      }
+
+      #community-demographics-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/communityDemographics.jpeg");
+      }
+
+      #organizational-readiness-and-outreach-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/organizationalReadiniess.jpeg");
+      }
+
+      #talent-management-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/talentManagement.jpeg");
+      }
+
+      #recuitment-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/recruitment.jpeg");
+      }
+
+      #career-pathways-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/careerPathways.png");
+      }
+
+      #custom-footer {
+        height: 240px;
+        padding-top: 5px;
+        background-color: #363661;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 50px;
+      }
+
+      #breadcrumb {
+        font-size: 18px;
+        margin-left: 75px;
+        margin-top: 80px;
+      }
+
+      #breadcrumb p {
+        display: inline-block;
+        color: white;
+      }
+
+      .panel-group {
+        margin-bottom: 90px;
+      }
+
+      .panel-group {
+        margin-top: 25px;
+      }
+
+      .panel-group p, li {
+        color: ivory;
+      }
+
+      .panel-group h4 {
+        color: ivory;
+        padding: 0;
+        font-size: 18px;
+      }
+
+      .panel-group div.panel-heading {
+        background-color: #674c90;
+      }
+
+      .panel-group .panel-default {
+        background-color: #674c90;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .panel-default a {
+        
+      }
+
+      .panel-heading a {
+        text-decoration: none;
+      }
+
+      .fa-plus {
+        font-size: 24px;
+        float: right;
+        color: ivory;
+        margin: auto;
+        margin-top: 12px;
+      }
+
+      .panel-default .panel-heading {
+        display: inline-block;
+        width: 100%;
+      }
+
+      .centre {
+        text-align: center;
+      }
+
+      #TmInfographic {
+        margin-top: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .panel-group > p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      #connect-with-us ul {
+        list-style-type: none;
+        list-style: none;
+      }
+
+      .fa-envelope {
+        color: white;
+        font-size: 18px;
+        margin-top: 11px;
+        margin-left: -4px;
+      }
+
+      #email-denis {
+        background-color: #1d2c4c;
+      }
+
+      #email-anna {
+        background-color: #674c90;
+      }
+
+      #email-team {
+        background-color: #edbb26;
+      }
+
+      .circle {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
+
+      #connect-with-us > h4 {
+        margin-bottom: 25px;
+      }
+
+      #learning-and-dev button {
+        height: 70px;
+        color: white;
+        background-color: #1d2c4c;
+        border-radius: 15px;
+      }
+
+      /* Commenting our gcpedia stuff */
+      #mw-panel,
+      #footer,
+      #mw-head {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="super-body">
+      <div id="header">
+        <div id="header-label">
+          <div id="header-label-left">
+            <a href="https://www.gcpedia.gc.ca"><b>GC</b>pedia</a>
+            <a href="#"><b>Home</b></a>
+          </div>
+          <div id="header-label-right">
+            <a href="#">Français</a>
+          </div>
+        </div>
+        <div id="sub-header">
+          <h1 class="text-center"><b>IM-IT Functional Community (IFC)</b></h1>
+          <div id="breadcrumb">
+            <a href="#">Home</a>
+            <p>&#9654;</p>
+            <a href="#">Recruitment</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h4 id="imit-title">
+            What is Recruitment at the Office of the Chief Information Officer?
+          </h4>
+          <p>
+            Several organizations signed a memorandum of understanding (MOU)
+            with the Office of the Chief Information Officer (OCIO). As part of
+            this MOU, we are responsible to conduct recruitment on behalf of the
+            IM/IT community.
+          </p>
+        </div>
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <i class="fas fa-plus"></i>
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapse-pools-and-procress"
+                  ><h4>Pools and processes</h4></a
+                >
+              </h4>
+            </div>
+            <div
+              id="collapse-pools-and-procress"
+              class="panel-collapse collapse"
+            >
+              <div class="panel-body">
+                <p>Our pools have:</p>
+                <ul>
+                  <li>New candidates added on an ongoing basis</li>
+                  <li>No expiry date</li>
+                  <li>No assigned group and level</li>
+                </ul>
+                <p>
+                  It is the hiring organization’s responsibility to review the
+                  candidate’s file to determine an appropriate group and level
+                  to offer.
+                </p>
+                <p>
+                  In partnership with the Public Service Commission, the
+                  following recruitment processes were externally advertised:
+                </p>
+                <h4>Current processes</h4>
+                <p>
+                  <a
+                    href="https://psjobs-emploisfp.psc-cfp.gc.ca/psrs-srfp/applicant/page1800?poster=1273786"
+                    >Women in Technology (open and ongoing)</a
+                  >
+                  <ul>
+                    <li>440 Canadian women citizen applicants as of November 3, 2020</li>
+                  </ul>
+                </p>
+                <h4>
+                  Past processes 
+                </h4>
+                <a href="https://emploisfp-psjobs.cfp-psc.gc.ca/psrs-srfp/applicant/page1800?poster=1356208">Careers in IM/IT Post Secondary Recruitment campaign - 2019 (still being assessed)</a>
+                <ul><li>
+                  769 Canadian citizen applicants, 186 were women 
+                </li></ul>
+                <a href="https://emploisfp-psjobs.cfp-psc.gc.ca/psrs-srfp/applicant/page1800?poster=1328984&toggleLanguage=en">Careers in IM/IT - Summer 2019 </a>
+                <ul><li>
+                  561 Canadian citizen applicants, 123 were women 
+                </li></ul>
+                <a href="https://emploisfp-psjobs.cfp-psc.gc.ca/psrs-srfp/applicant/page1800?poster=1208332">Careers in IM/IT Post Secondary Recruitment campaign - 2018 </a>
+                <ul><li>
+                  762 Canadian citizen applicants, 193 were women 
+                </li></ul>
+                <a href="https://emploisfp-psjobs.cfp-psc.gc.ca/psrs-srfp/applicant/page1800?poster=1067375">Careers in IM/IT Post Secondary Recruitment campaign - 2017</a>
+                <ul><li>
+                  575 Canadian citizen applicants, 153 were women 
+                </li></ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <i class="fas fa-plus"></i>
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  href="#collapse-annual-talent-pipeline"
+                  ><h4>Talent Management (TM) Pipeline at OCIO</h4></a
+                >
+              </h4>
+            </div>
+            <div
+              id="collapse-annual-talent-pipeline"
+              class="panel-collapse collapse"
+            >
+              <div class="panel-body"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>What do we offer?</h4>
+          <p>
+            If you are looking to staff a CIO or an Executive position in the
+            digital community, we are happy to assist in your search with the
+            <b><u>Referral Process!</u></b>
+          </p>
+
+          <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <i class="fas fa-plus"></i>
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse-referral-process"
+                    ><h4>Referral Process</h4></a
+                  >
+                </h4>
+              </div>
+              <div
+                id="collapse-referral-process"
+                class="panel-collapse collapse"
+              >
+                <div class="panel-body">
+                  <p>
+                    Under the new Policy on Service and Digital, organizations
+                    are asked to consult with the OCIO in the appointment of a
+                    new Chief Information Officer (CIO) or other pivotal digital
+                    executive positions.
+                  </p>
+                  <p>
+                    Our team undertakes ongoing talent management throughout the
+                    year. Each December, we solicit and gather a list of
+                    candidates from departments at the EX-01 to EX-03 levels who
+                    are ready for lateral movement and/or advancement. This is
+                    EXposition.
+                  </p>
+                  <p>
+                    Similarly, we undertake this same process for those at the
+                    EX equivalent and EX minus one level in June. This is EXtend
+                    EXposition.
+                  </p>
+                  <p>
+                    Data sources: <br />
+                    We use the latest data available from the Executive Talent
+                    Management System (ETMS), from possible recent pools, as
+                    well as direct input from organizationsand candidates.
+                  </p>
+                  <p>
+                    Candidate Application Sharing Procedures: <br />
+                    To ensure the TM team is efficient and doesn't disseminate
+                    unnecessary data to the organization, it is essential to
+                    first contact the candidates to seek interest for the
+                    position.
+                  </p>
+                  <img
+                    id="referralProcessImg"
+                    src="https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/referralInfographic.PNG"
+                  />
+                </div>
+              </div>
+            </div>
+            <p>
+              Each December, we solicit and gather a list of candidates,
+              submitted by Human Resources Advisors, CIOs and/or ADMs from many
+              organizations, at the EX-01 to the EX-03 levels who are ready for
+              Potential interdepartmental opportunities, Learning, Development
+              and networking activities and/or advancement. This roundtable is
+              called <b><u>EXposition.</u></b>
+            </p>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <i class="fas fa-plus"></i>
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse-exposition"
+                    ><h4>EXposition</h4></a
+                  >
+                </h4>
+              </div>
+              <div id="collapse-exposition" class="panel-collapse collapse">
+                <div class="panel-body"></div>
+              </div>
+            </div>
+            <p>
+              Similarly, we undertake this same process for those at the EX
+              equivalent and EX minus one level in June. This is known as
+              <b><u>EXtend EXposition.</u></b>
+            </p>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <i class="fas fa-plus"></i>
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse-extend-exposition"
+                    ><h4>EXtend EXposition</h4></a
+                  >
+                </h4>
+              </div>
+              <div
+                id="collapse-extend-exposition"
+                class="panel-collapse collapse"
+              >
+                <div class="panel-body"></div>
+              </div>
+            </div>
+            <p>
+              The <b><u>Digital Employment Equity Mentoring Program</u></b> was
+              created to promote a more diverse and representative group of
+              senior executives for digital leadership in the Government of
+              Canada
+            </p>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <i class="fas fa-plus"></i>
+                <h4 class="panel-title">
+                  <a
+                    data-toggle="collapse"
+                    href="#collapse-digital-employment-equity"
+                    ><h4>
+                      Digital Employment Equity Mentoring Pilot Program
+                    </h4></a
+                  >
+                </h4>
+              </div>
+              <div
+                id="collapse-digital-employment-equity"
+                class="panel-collapse collapse"
+              >
+                <div class="panel-body"></div>
+              </div>
+            </div>
+            <p>
+              We offer networking activities to all referred candidates and are
+              invited to attend and participate. These activities can be
+              organized by the TM team or <b><u>other partners.</u></b>
+            </p>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <i class="fas fa-plus"></i>
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse-networking"
+                    ><h4>Networking</h4></a
+                  >
+                </h4>
+              </div>
+              <div id="collapse-networking" class="panel-collapse collapse">
+                <div class="panel-body"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="otherResources">
+          <h4>Other Resources</h4>
+          <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <i class="fas fa-plus"></i>
+                <h4 class="panel-title">
+                  <a
+                    data-toggle="collapse"
+                    href="#collapse-learning-and-development"
+                    ><h4>Learning and Development Resources</h4></a
+                  >
+                </h4>
+              </div>
+              <div
+                id="collapse-learning-and-development"
+                class="panel-collapse collapse"
+              >
+                <div class="panel-body">
+                  <p></p>
+                  <img src="#" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="connect-with-us" class="container">
+          <div class="row">
+            <h2 class="centre">Connect with US</h2>
+          </div>
+        </div>
+      </div>
+      <div id="custom-footer">
+        <div class="row">
+          <div class="col-md-4">
+            <ul>
+              <li><b>Connect With Us!</b></li>
+              <li><a>Upcoming Events</a></li>
+              <li><a>Whats Happening at the CMO</a></li>
+              <li><a>Follow us on Twitter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li><b>Have Questions?</b></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-5"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
