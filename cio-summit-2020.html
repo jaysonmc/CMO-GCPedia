@@ -1,0 +1,343 @@
+<html>
+  <!--
+    This page was created by Jayson McIntosh
+-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>CMO CIO Summit 2020</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        -ms-overflow-x: hidden;
+      }
+
+      .footer-sub-component-label:hover a {
+        color: ivory;
+        text-decoration: underline;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      #super-body {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 10000;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: #fff;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.5s ease-in;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+      }
+
+      .footer-sub-component-label {
+        padding-top: 17.5px;
+        text-align: center;
+        width: 100%;
+        margin-top: 70px;
+        background-color: #674c90;
+        opacity: 0.9;
+        height: 55px;
+      }
+
+      #imit-title {
+        margin-bottom: 45px;
+        font-weight: 900;
+      }
+
+      div#header,
+      #sub-header {
+        margin-bottom: 35px;
+      }
+
+      div#header {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/banner-background.jpg");
+        height: 375px;
+        margin-left: 10%;
+        width: 80%;
+      }
+
+      #header-label {
+        background-color: #363661;
+        height: 55px;
+        padding-top: 12px;
+      }
+
+      #header-label a {
+        font-size: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+
+      #header-label-right {
+        float: right;
+      }
+
+      #header-label-left {
+        float: left;
+      }
+
+      #sub-header {
+        height: 320px;
+        padding-top: 40px;
+        background-color: #363661;
+        width: 100%;
+        opacity: 0.9;
+      }
+
+      #custom-footer {
+        height: 240px;
+        padding-top: 5px;
+        background-color: #674c90;
+        width: 80%;
+        margin-left: 10%;
+        background-color: #1d2c4c;
+        margin-top: 50px;
+      }
+
+      #custom-footer li,
+      #custom-footer a {
+        font-size: 20px;
+        color: #ffffff;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      .no-bullet {
+        list-style: none;
+      }
+
+      #header p,
+      #header h1 {
+        color: ivory;
+        margin-left: 25px;
+        text-align: left;
+      }
+
+      purp {
+        color: #674c90;
+      }
+
+      #header-desc {
+        margin-top: 50px;
+        width: 65%;
+      }
+
+      #header-links {
+        float: right;
+        margin-right: 3%;
+      }
+
+      #header-links a {
+        color: ivory;
+      }
+
+      .pilar-subline {
+        margin-left: 62px;
+      }
+
+        /* Timeline Styling */
+        /* Credit for timeline and styling goes to: https://bootsnipp.com/snippets/xrKXW*/
+        ul.timeline {
+            list-style-type: none;
+            position: relative;
+        }
+        ul.timeline:before {
+            content: ' ';
+            background: #d4d9df;
+            display: inline-block;
+            position: absolute;
+            left: 29px;
+            width: 2px;
+            height: 100%;
+            z-index: 400;
+        }
+        ul.timeline > li {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        ul.timeline > li:before {
+            content: ' ';
+            background: #674c90;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            border: 3px solid #674c90;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+            z-index: 400;
+        }
+      /* End Timeline Styling */
+
+      /* Commenting our gcpedia stuff */
+      #mw-panel,
+      #footer,
+      #mw-head {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="super-body">
+      <div id="header">
+        <div id="header-label">
+          <div id="header-label-left">
+            <a href="https://www.gcpedia.gc.ca"><b>GC</b>pedia</a>
+            <a href="#"><b>Home</b></a>
+          </div>
+          <div id="header-label-right">
+            <a href="#">Français</a>
+          </div>
+        </div>
+        <div id="sub-header">
+          <div id="bread-crumb">
+            <p>GCPedia / CMO Events / <purp>CMO Summit</purp></p>
+          </div>
+          <h1 class="text-center"><b>2020 CIO Summit</b></h1>
+          <p>
+            <purp>When:</purp> Wednesday, November 25th, 8AM to 12:15PM EST
+            &nbsp;&nbsp;&nbsp;&nbsp; <purp>Where:</purp> Microsoft Teams
+            &nbsp;&nbsp;&nbsp;&nbsp; <purp>Attendance:</purp> Invitation Only
+          </p>
+          <p id="header-desc">
+            The Government of Canada is looking forward to hosting the first
+            virtual Chief Information Officer (CIO) Summit. Despite the great
+            changes to how we work and gather, this virtual summit is an
+            opportunity to meet and demonstrate our resilience in the face of
+            unprecedented challenges and how we can build the #GCDigital
+            community of tomorrow.
+          </p>
+          <p id="header-links">
+            <a href="#">Agenda</a> 
+            <purp>&nbsp; <purp>|</purp> &nbsp;
+            <a href="#">Resources</a> &nbsp; <purp>|</purp> &nbsp; <a href="#">Twitter</a> <purp>|</purp>
+            &nbsp; <purp>|</purp> &nbsp;
+            <a href="#">Contact Us</a>
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h4 id="imit-title"><purp>2020 CIO Summit Agenda</purp></h4>
+          <p>
+              The main theme of the CIO Summit is "Working in #GCDigital" where we will have the opportunity
+              to look back at the efforts made in the past year, discuss the future of digital talent and look
+              forward to collectively implementing the updated 
+              <a href="https://www.canada.ca/en/government/system/digital-government/digital-operations-strategic-plan-2018-2022.html">Digital Operations Strategic Plan</a>
+          </p>
+        </div>
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <!-- Credit for timeline and styling goes to: https://bootsnipp.com/snippets/xrKXW -->
+                    <ul class="timeline">
+                        <li>
+                            <p>Networking, Virtual Kiosks and Slido open: 8:00-8:30AM EST</p>
+                            <p>https://sli.do/#OCIOSUMMIT</p>
+                        </li>
+                        <li>
+                            <p>8:00-8:45AM EST: Welcome and Introductions</p>
+                            <p>Join us for a warm welcome to the day’s discussion and events.</p>
+                        </li>
+                        <li>
+                            <p>8:45-9:30AM EST:  Keynote and Question & Answer Period</p>
+                            <p>Join us to take a look at the past year and how the Government 
+                                of Canada can move forward in this critical and unprecedented time where the importance of digital government is bigger than ever.</p>
+                        </li>
+                        <li>
+                            <p>10:15-10:30AM EST:  Health Break</p>
+                        </li>
+                        <li>
+                            <p>10:30-11:15AM EST:  Working in #GCDigital: Transformation of Talent</p>
+                            <p>Join us as our panel showcases three different initiatives that have or are in the process of implementing effective strategies to attract, 
+                                retain and develop talent, with a focus on building a diverse and inclusive workforce.</p>
+                        </li>
+                        <li>
+                            <p>11:15AM-12:00PM EST:  Breakout sessions focused on the Digital Operations Strategic Plan 2021-2024</p>
+                            <p>Pilar 01: Services that meet clients’ needs and expectations</p>
+                            <p class="pilar-subline">
+                                “Making the GC Digital Standards Real” 
+                            </p>
+                            <p>Pillar 02: Technology that is fit for digital services and operations</p>
+                            <p class="pilar-subline">
+                                “What’s Next in the Journey to the Cloud” 
+                            </p>
+                            <p>Pillar 03: Operations that enable digital-first delivery</p>
+                            <p class="pilar-subline">
+                                “Moving from Project to Product”
+                            </p>
+                        </li>
+                        <li>
+                            <p>12:00-12:15PM EST:  Closing remarks</p>
+                        </li>
+                        <li>
+                            <p>12:15-1:15PM EST: (Optional) Lunch and Learn with Gartner on Product Management </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="custom-footer">
+        <div class="row">
+          <div class="col-md-4">
+            <ul>
+              <li class="no-bullet"><b>Connect With Us!</b></li>
+              <li><a>Upcoming Events</a></li>
+              <li><a>Whats Happening at the CMO</a></li>
+              <li><a>Follow us on Twitter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li><b>Have Questions?</b></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-5"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
