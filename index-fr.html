@@ -1,0 +1,494 @@
+<html>
+  <!--
+    This page was created by Jayson McIntosh
+-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>GCpedia de la Collectivité numérique</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        -ms-overflow-x: hidden;
+      }
+
+      .team-label a {
+        text-decoration: none;
+      }
+
+      a,
+      a:visited {
+        color: ivory;
+        text-decoration: underline;
+      }
+
+      .footer-sub-component-label:hover a {
+        color: ivory;
+        text-decoration: underline;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      ul {
+        list-style-type: none;
+        list-style: none;
+      }
+
+      li {
+        font-size: 20px;
+        color: #ffffff;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      h1 {
+        color: #ffffff;
+      }
+
+      #super-body {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 10000;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: #fff;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.5s ease-in;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+      }
+
+      .team-label {
+        height: 190px;
+        padding-top: 130px;
+        background-size: contain;
+      }
+
+      .footer-sub-component-label {
+        padding-top: 17.5px;
+        text-align: center;
+        width: 100%;
+        margin-top: 70px;
+        background-color: #674c90;
+        opacity: 0.9;
+        height: 55px;
+      }
+
+      .team-grid-row-subtext {
+        margin-top: 15px;
+        margin-bottom: 25px;
+      }
+
+      .team-label-row {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .team-grid-row {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      #imit-title {
+        margin-bottom: 45px;
+        font-weight: 900;
+      }
+
+      div#header,
+      #sub-header {
+        margin-bottom: 35px;
+      }
+
+      div#header {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/banner-background.jpg");
+        height: 375px;
+        margin-left: 10%;
+        width: 80%;
+      }
+
+      #header-label {
+        background-color: #363661;
+        height: 55px;
+        padding-top: 12px;
+      }
+
+      #header-label a {
+        font-size: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+
+      #header-label-right {
+        float: right;
+      }
+
+      #header-label-left {
+        float: left;
+      }
+
+      #sub-header {
+        height: 320px;
+        padding-top: 125px;
+        background-color: #363661;
+        width: 100%;
+        opacity: 0.9;
+      }
+
+      #community-management-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/communityManagement.jpeg");
+      }
+
+      #community-demographics-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/communityDemographics.jpeg");
+      }
+
+      #organizational-readiness-and-outreach-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/organizationalReadiniess.jpeg");
+      }
+
+      #talent-management-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/talentManagement.jpeg");
+      }
+
+      #recuitment-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/recruitment.jpeg");
+      }
+
+      #career-pathways-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/careerPathways.png");
+      }
+
+      #custom-footer {
+        height: 240px;
+        padding-top: 5px;
+        background-color: #674c90;
+        width: 80%;
+        margin-left: 10%;
+        background-color: #1d2c4c;
+        margin-top: 50px;
+      }
+
+      purp {
+        color: #674c90;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      a#teams-link {
+        color: black;
+      }
+
+      #event-header {
+        margin-bottom: 15px;
+      }
+
+      #upcoming-event {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 25px;
+        border-radius: 15px;
+        border: 1px solid #dbdbdb;
+        height: 160px;
+      }
+
+      #upcoming-event #event-header a {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      #upcoming-event button {
+        margin-top: 15%;
+        border: 1px solid #674c90;
+        border-radius: 15px;
+        height: 55px;
+        width: 125px;
+        background-color: #ede9f5;
+      }
+
+      #upcoming-event button a {
+        text-decoration: none;
+        color: #674c90;
+      }
+
+      #div-calendar {
+        padding-top: 5px;
+        border-right: 1px solid #dbdbdb;
+        height: 100%;
+        padding-right: 15px;
+      }
+
+      #div-calendar p {
+        margin-left: 55px;
+        margin-top: 5px;
+        font-size: 18px;
+      }
+
+      #div-calendar .fa-calendar {
+        font-size: 80px;
+        margin-left: 30%;
+        color: #674c90;
+      }
+
+      #div-event-content {
+        padding-left: 50px;
+      }
+
+      /* Commenting our gcpedia stuff */
+      #mw-panel,
+      #footer,
+      #mw-head {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="super-body">
+      <div id="header">
+        <div id="header-label">
+          <div id="header-label-left">
+            <a href="https://www.gcpedia.gc.ca"><b>GC</b>pedia</a>
+            <a href="#"><b>Accueil</b></a>
+          </div>
+          <div id="header-label-right">
+            <a href="#">English</a>
+          </div>
+        </div>
+        <div id="sub-header">
+          <h1 class="text-center"><b>Collectivité numérique</b></h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h4 id="imit-title">Bureau de gestion de la collectivité</h4>
+          <p>
+            Notre mission consiste à bâtir et favoriser un écosystème solide
+            pour <b>attirer, perfectionner, reconnaître et conserver</b> une
+            main-d’œuvre de la GI-TI et des services numériques efficaces et
+            compétents. Pour y parvenir, nous offrons soutien, conseils,
+            produits et services sur des enjeux touchant
+            <b>la gestion stratégique des ressources humaines</b> (GSRH) au DPI
+            du Canada, aux cadres supérieurs des services numériques et DPI
+            ministériels, et à la collectivité de la GI-TI et du numérique. Nous
+            servons la plus vaste collectivité fonctionnelle au gouvernement
+            composée de plus de <b>20 000 systèmes d’ordinateurs (CS)</b> et
+            autres praticiens et responsables de la collectivité numérique.
+          </p>
+        </div>
+        <div id="upcoming-event" class="row">
+          <div id="div-calendar" class="col-md-2">
+            <i class="fa fa-calendar"></i>
+            <p><b>25 nov</b></p>
+          </div>
+          <div id="div-event-content" class="col-md-8">
+            <div id="event-header">
+              <purp>Prochain événement: </purp
+              ><a href="#">Sommet des DPI 2020</a>
+            </div>
+            <p>
+              <b>Date: </b> le mercredi 25 novembre, de 8h à 12h15 (HNE)
+              &nbsp;&nbsp;&nbsp;&nbsp; <b>Lieu : </b>
+              <a id="teams-link" href="#">Microsoft Teams</a>
+            </p>
+            <p><b>Participation :</b> sur invitation seulement</p>
+          </div>
+          <div class="col-md-2">
+            <button type="button" class="btn">
+              <a href="#"><b>Visualiser l’événement</b></a>
+            </button>
+          </div>
+        </div>
+        <div class="row team-grid-row">
+          <div class="col-md-4">
+            <div class="row team-label-row">
+              <div
+                class="team-label"
+                id="organizational-readiness-and-outreach-label"
+              >
+                <p class="footer-sub-component-label">
+                  <a href="https://www.gcpedia.gc.ca/wiki/CIO_Suite"
+                    >Préparation organisationnelle et sensibilisation</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="row team-label-row">
+              <p class="team-grid-row-subtext">
+                Fournir une base solide pour des pratiques RH efficaces et une
+                conception organisationnelle est primordial pour permettre à nos
+                organisations de s’acquitter de leurs mandats.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row team-label-row">
+              <div class="team-label" id="recuitment-label">
+                <p class="footer-sub-component-label">
+                  <a
+                    href="https://www.gcpedia.gc.ca/wiki/IFC_Recruitment_%26_Staffing"
+                    >Recrutement</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="row team-label-row">
+              <p class="team-grid-row-subtext">
+                Le programme de recrutement aide à attirer et à référer des
+                candidats de qualité dans l’ensemble du GC. Nous appuyons
+                directement la communauté de la GI/TI, le dirigeant principal de
+                l'information du Canada en tant que chef fonctionnel de la
+                communauté de la GI/TI et la Politique sur les services et le
+                numérique.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row team-label-row">
+              <div class="team-label" id="talent-management-label">
+                <p class="footer-sub-component-label">
+                  <a
+                    href="https://www.gcpedia.gc.ca/wiki/Talent_Management_for_the_IM-IT_Community"
+                    >Gestion des talents</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="row team-label-row">
+              <p class="team-grid-row-subtext">
+                La gestion des talents est un processus qui aide à bâtir une
+                excellence soutenue dans le leadership d’une organisation. Pour
+                que la gestion des talents soit efficace, les employés doivent
+                être placés dans des postes qui optimisent leurs compétences et
+                leurs buts.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="row team-label-row">
+              <div class="team-label" id="career-pathways-label">
+                <p class="footer-sub-component-label">
+                  <a href="#">Cheminements de carrière (coming soon)</a>
+                </p>
+              </div>
+            </div>
+            <div class="row team-label-row">
+              <p class="team-grid-row-subtext">
+                Le projet de cheminements de carrière (en cours d’élaboration)
+                offrira un portail centralisé pour l’information et les
+                ressources en matière de perfectionnement professionnel dans le
+                but d’aider les employés et les gestionnaires à atteindre leurs
+                objectifs de perfectionnement et d’avancement professionnels.
+                Ces ressources sont fournies pour faciliter les transitions de
+                carrière et favoriser l’avancement professionnel.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row team-label-row">
+              <div class="team-label" id="community-management-label">
+                <p class="footer-sub-component-label">
+                  <a href="https://www.gcpedia.gc.ca/wiki/Workplace_Management"
+                    >Gestion de la collectivité</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="row team-label-row">
+              <p class="team-grid-row-subtext">
+                Favoriser un grand sentiment d’appartenance et de fierté fait
+                partie de notre travail. Grâce à nos initiatives de gestion de
+                la collectivité, nous offrons une reconnaissance et un
+                leadership dans l’ensemble des ministères afin de transformer et
+                de renforcer les capacités et les services numériques pour les
+                Canadiens.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row team-label-row">
+              <div class="team-label" id="community-demographics-label">
+                <p class="footer-sub-component-label">
+                  <a
+                    href="https://www.gcpedia.gc.ca/wiki/Community_Demographics"
+                    >Profil démographique de la collectivité
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="row team-label-row">
+              <p class="team-grid-row-subtext">
+                Les données démographiques (actuellement mises à jour) donnent
+                un aperçu des membres de notre collectivité, présents et
+                anciens, en ce qui concerne des caractéristiques générales
+                telles que l’âge, le sexe et d’autres données.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="custom-footer">
+        <div class="row">
+          <div class="col-md-4">
+            <ul>
+              <li class="no-bullet"><b>Connectez-vous avec nous</b></li>
+              <li><a>Évènements à venir</a></li>
+              <li><a>Ce qui se passe au CMO (bientôt disponible)</a></li>
+              <li><a>Suivez-nous sur Twitter (bientôt disponible)</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li><b>Avoir des questions?</b></li>
+              <li>
+                <a href="mailto:iCommunity-icollectivite@tbs-sct.gc.ca"
+                  >Nous contacter</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
