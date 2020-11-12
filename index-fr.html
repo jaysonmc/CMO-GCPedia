@@ -238,18 +238,16 @@
         font-weight: bold;
       }
 
-      #upcoming-event button {
+      #upcoming-event a.view-event {
+        text-decoration: none;
+        color: #674c90;
         margin-top: 15%;
         border: 1px solid #674c90;
         border-radius: 15px;
         height: 55px;
         width: 177px;
         background-color: #ede9f5;
-      }
-
-      #upcoming-event button a {
-        text-decoration: none;
-        color: #674c90;
+        line-height: 3;
       }
 
       #div-calendar {
@@ -339,11 +337,11 @@
             <p><b>Participation :</b> sur invitation seulement</p>
           </div>
           <div class="col-md-2">
-            <button type="button" class="btn">
-              <a href="https://www.gcpedia.gc.ca/wiki/BGC_Sommet_des_DPI_2020"
-                ><b>Visualiser l’événement</b></a
-              >
-            </button>
+            <a
+              class="btn view-event"
+              href="https://www.gcpedia.gc.ca/wiki/BGC_Sommet_des_DPI_2020"
+              ><b>Visualiser l’événement</b></a
+            >
           </div>
         </div>
         <div class="row team-grid-row">
