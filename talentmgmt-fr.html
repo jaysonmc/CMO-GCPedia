@@ -1,0 +1,658 @@
+<html>
+  <!--
+    This page was created by Jayson McIntosh
+-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>Change Management Office Talent Management GCpedia</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <style>
+      body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        -ms-overflow-x: hidden;
+      }
+
+      .team-label a {
+        text-decoration: none;
+      }
+
+      a,
+      a:visited {
+        color: ivory;
+        text-decoration: underline;
+      }
+
+      .footer-sub-component-label:hover a {
+        color: ivory;
+        text-decoration: underline;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      ul {
+        list-style-type: none;
+        list-style: none;
+      }
+
+      #custom-footer li {
+        font-size: 20px;
+        color: #ffffff;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      h1 {
+        color: #ffffff;
+      }
+
+      h4 {
+        font-weight: 900;
+      }
+
+      hr {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        border: 0;
+        clear:both;
+        display:block;
+        width: 96%;               
+        background-color: black;
+        height: 1px;
+      }
+
+      #super-body {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 10000;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: #fff;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.5s ease-in;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+      }
+
+      .team-label {
+        height: 190px;
+        padding-top: 130px;
+        background-size: contain;
+      }
+
+      .footer-sub-component-label {
+        padding-top: 17.5px;
+        text-align: center;
+        width: 100%;
+        margin-top: 70px;
+        background-color: #674c90;
+        opacity: 0.9;
+        height: 55px;
+      }
+
+      .team-grid-row-subtext {
+        margin-top: 15px;
+        margin-bottom: 25px;
+      }
+
+      .team-label-row {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .team-grid-row {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      #imit-title {
+        margin-bottom: 45px;
+      }
+
+      div#header,
+      #sub-header {
+        margin-bottom: 35px;
+      }
+
+      #imit-title ul li {
+          color: black;
+          font-size: 16px;
+      }
+
+      div#header {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/talentManagementBanner.jpg");
+        height: 375px;
+        margin-left: 10%;
+        width: 80%;
+        background-size: stretch;
+        background-position-y: -150px;
+      }
+
+      #header-label {
+        background-color: #363661;
+        height: 55px;
+        padding-top: 12px;
+      }
+
+      #header-label a {
+        font-size: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+
+      #header-label-right {
+        float: right;
+      }
+
+      #header-label-left {
+        float: left;
+      }
+
+      #sub-header {
+        height: 320px;
+        padding-top: 125px;
+        background-color: #363661;
+        width: 100%;
+        opacity: 0.9;
+      }
+
+      #community-management-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/communityManagement.jpeg");
+      }
+
+      #community-demographics-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/communityDemographics.jpeg");
+      }
+
+      #organizational-readiness-and-outreach-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/organizationalReadiniess.jpeg");
+      }
+
+      #talent-management-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/talentManagement.jpeg");
+      }
+
+      #recuitment-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/recruitment.jpeg");
+      }
+
+      #career-pathways-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/careerPathways.png");
+      }
+
+      #custom-footer {
+        height: 240px;
+        padding-top: 5px;
+        background-color: #363661;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 50px;
+      }
+
+      #breadcrumb {
+        font-size: 18px;
+        margin-left: 75px;
+        margin-top: 80px;
+      }
+
+      #breadcrumb p {
+        display: inline-block;
+        color: white;
+      }
+
+      .panel-group {
+        margin-bottom: 90px;
+      }
+
+      .panel-group {
+          margin-top: 25px;
+      }
+
+      .panel-group .panel-body p {
+        color: ivory;
+      }
+
+      .panel-group h4 {
+        color: ivory;
+        padding: 0;
+        font-size: 18px;
+      }
+
+      .panel-group div.panel-heading {
+        background-color: #674c90;
+      }
+
+      .panel-group .panel-default {
+          background-color: #674c90;
+          padding-left: 15px;
+          padding-right: 15px;
+      }
+
+      .panel-default a {
+        text-decoration: none;
+      }
+
+      .fa-plus {
+        font-size: 24px;
+        float: right;
+        color: ivory;
+        margin: auto;
+        margin-top: 12px;
+      }
+
+      .panel-default .panel-heading {
+        display: inline-block;
+        width: 100%;
+      }
+
+      .centre {
+        text-align: center;
+      }
+
+      .panel-body img {
+        margin-top: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+
+      .panel-group > p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      #connect-with-us ul {
+        list-style-type: none;
+        list-style: none;
+      }
+
+      .fa-envelope {
+          color: white;
+          font-size: 18px;
+	        margin-top: 11px;
+	        margin-left: -4px;
+      }
+
+      #email-denis {
+        background-color: #1d2c4c;
+      }
+
+      #email-anna {
+        background-color: #674c90;
+      }
+
+      #email-team {
+        background-color: #edbb26;
+      }
+
+      .circle {
+          border-radius: 50%;
+          width: 40px;
+          height: 40px; 
+      }
+
+      #connect-with-us > h4 {
+          margin-bottom: 25px;
+      }
+
+      #learning-and-dev button {
+        height: 70px;
+        color: white;
+        background-color: #1d2c4c;
+        border-radius: 15px;
+      }
+
+      .sub-panel-body h5 {
+        color: ivory;
+        font-size: 14px;
+        display: inline-block;
+      }
+
+      .sub-panel-body a {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-weight: bold;
+      }
+
+      .sub-panel-body p {
+        margin-left: 5px;
+      }
+
+      .sub-panel-body a:hover {
+        text-decoration: underline;
+        color: ivory;
+      }
+
+      .sub-panel-body li {
+        margin-top: 25px;
+      }
+
+      .panel-body .row {
+        padding-left: 10%;
+      }
+
+      .panel-body button {
+	      background-color: #1d2c4c;
+	      color: ivory;
+	      height: 75px;
+      }
+
+      /* Commenting our gcpedia stuff */
+      #mw-panel,
+      #footer,
+      #mw-head {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="super-body">
+      <div id="header">
+        <div id="header-label">
+          <div id="header-label-left">
+            <a href="https://www.gcpedia.gc.ca"><b>GC</b>pedia</a>
+            <a href="#"><b>Accueil</b></a>
+          </div>
+          <div id="header-label-right">
+            <a href="https://www.gcpedia.gc.ca/wiki/DEV_TEMP_TalentMgmt">English</a>
+          </div>
+        </div>
+        <div id="sub-header">
+          <h1 class="text-center"><b>Collectivité numérique</b></h1>
+          <div id="breadcrumb">
+            <a href="#">Accueil</a>
+            <p>&#9654;</p>
+            <a href="#">Gestion des talents </a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h4 id="imit-title">Qu’est-ce que la Gestion de Talents au BDPI?</h4>
+          <p>
+            La gestion de talents est un processus qui aide à bâtir une excellence soutenue dans le leadership au sein de l'organisation. Pour que la gestion de talents soit efficace, les employés doivent être placés dans des postes qui optimisent leurs compétences et leurs buts. L'objectif est que chaque individu atteigne et dépasse son potentiel, tout en développant des expériences.
+          </p>
+          <p>
+            Le bureau de la gestion de la collectivité croit que la gestion de talents :
+            <ul>
+                <li>1) Aide à la rétention des employés</li>
+                <li>2) Crée la succession des cadres supérieurs de demain et</li>
+                <li>3) Aide à bâtir une collectivité numérique forte au sein du GC</li>
+            </ul>
+          </p>
+        </div>
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <i class='fas fa-plus'></i>
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapse-annual-talent-mgmt"><h4>Cycle annuel de la Gestion de Talents au BDPI</h4></a>
+              </h4>
+            </div>
+            <div id="collapse-annual-talent-mgmt" class="panel-collapse collapse">
+              <div class="panel-body">
+              <img id="TalentPipelineImg" src="https://www.gcpedia.gc.ca/gcwiki/images/3/30/Cycle_annuel_de_la_Gerstion_de_talents_au_BDPI.PNG" />            
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <i class='fas fa-plus'></i>
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapse-annual-talent-pipeline"><h4>Processus de la Gestion de Talents au BDPI</h4></a>
+              </h4>
+            </div>
+            <div id="collapse-annual-talent-pipeline" class="panel-collapse collapse">
+              <div class="panel-body">
+                <img id="TalentPipelineImg" src="https://www.gcpedia.gc.ca/gcwiki/images/6/65/Fr_slide_24.PNG" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Que proposons-nous ?</h4>
+          <p>Si vous cherchez à doter un poste de DPI ou un poste de direction dans la collectivité de la GI / TI, nous serons heureux de vous aider dans votre recherche avec le <b><u>Processus de recommandations!</u></b></p>
+          <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <i class='fas fa-plus'></i>
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse-referral-process"><h4>Processus de recommandations</h4></a>
+                </h4>
+              </div>
+              <div id="collapse-referral-process" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <img id="referralProcessImg" src="https://www.gcpedia.gc.ca/gcwiki/images/9/9d/Processus_-_FR.PNG" />
+                </div>
+              </div>
+            </div>
+            <p>Notre équipe entreprend des initiatives de gestion des talents tout au long de l'année. Chaque année en décembre, nous sollicitons et rassemblons des candidats des ministères aux niveaux EX-01 à EX-03 qui sont prêts pour un mouvement latéral et/ou un avancement. Ceci est  <b><u>EXposition.</u></b>
+            </p>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <i class='fas fa-plus'></i>
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse-exposition"><h4>EXposition</h4></a>
+                </h4>
+              </div>
+              <div id="collapse-exposition" class="panel-collapse collapse">
+                <div class="panel-body">
+                 <img id="TalentPipelineImg" src="https://www.gcpedia.gc.ca/gcwiki/images/5/59/FR_Slide_6.PNG" />
+                 <img id="TalentPipelineImg" src="https://www.gcpedia.gc.ca/gcwiki/images/0/0c/FR_Slide_7.PNG" />
+                </div>
+              </div>
+            </div>
+            <p>
+              Également, nous entreprenons ce même processus pour les candidats qui se trouvent aux niveaux EX équivalent ou EX moins un en juin de chaque année. Ceci est  <b><u>Prolonger EXposition.</u></b>
+            </p>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <i class='fas fa-plus'></i>
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse-extend-exposition"><h4>Prolonger EXposition</h4></a>
+                </h4>
+              </div>
+              <div id="collapse-extend-exposition" class="panel-collapse collapse">
+                <div class="panel-body">
+                <img id="TalentPipelineImg" src="https://www.gcpedia.gc.ca/gcwiki/images/d/da/Fr_Slide_9.PNG" />
+                </div>
+              </div>
+            </div>
+            <p>
+            <b><u>Le programme de mentorat du secteur numérique</u></b> a été créé pour promouvoir une structure plus diversifiée et représentative des cadres supérieurs au sein du gouvernement du Canada
+            </p>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <i class='fas fa-plus'></i>
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse-digital-mentorship-pilot"><h4>Programme pilote de mentorat du secteur numérique</h4></a>
+                </h4>
+              </div>
+              <div id="collapse-digital-mentorship-pilot" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>
+                    Nous proposons des activités de mise en réseau à tous les candidats recommandés et sommes invités à y assister et à y participer. Ces activités peuvent être organisées par l'équipe de gestion des talents ou par d'autres partenaires.
+                  </p>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <i class='fas fa-plus'></i>
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse-mentoring-pilot-general-resources"><h4>Ressources générales(5)</h4></a>
+                      </h4>
+                    </div>
+                    <div id="collapse-mentoring-pilot-general-resources" class="panel-collapse collapse">
+                      <div class="panel-body sub-panel-body">
+                        <ul>
+                          <li>
+                            <p><a href="https://www.gcpedia.gc.ca/gcwiki/images/0/01/Handbook_Mentors-Mentees_-_FR_.pdf">Manuel Mentors-Mentorés / Protégé</a></p>
+                            <p><a href="https://www.gcpedia.gc.ca/gcwiki/images/8/86/Mentoring_Cycle_-_FR.pdf">Cycle de mentorat</a></p>
+                            <p><a href="https://www.gcpedia.gc.ca/gcwiki/images/0/01/Mentoring_FAQ_-_FR.pdf">FAQ sur le mentorat</a></p>
+                            <p><a href="https://www.gcpedia.gc.ca/gcwiki/images/4/45/1_-_Formulaire_d%E2%80%99engagement_mutuel_-_FR.pdf">Accord d'engagement réciproque</a></p>
+                            <p><a href="https://www.gcpedia.gc.ca/gcwiki/images/c/ca/Strategy_Plan_-_FR.pdf">Plan stratégique</a></p>
+                            <div class="row">
+                              <div class="col-md-2">
+                              </div>
+                              <div class="col-md-10"></div>                              
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <i class='fas fa-plus'></i>
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse-mentor-resources"><h4>Ressources de mentorat (2)</h4></a>
+                      </h4>
+                    </div>
+                    <div id="collapse-mentor-resources" class="panel-collapse collapse">
+                      <div class="panel-body sub-panel-body">
+                        <ul>
+                          <li>
+                              <p><a href="https://www.gcpedia.gc.ca/gcwiki/images/2/28/1_-_Formulaire_d%E2%80%99inscription_du_Mentor%C3%A9_-_FR.pdf">Formulaire d'inscription du mentor</a></p>
+                              <p><a href="https://www.gcpedia.gc.ca/gcwiki/images/c/cb/Tips_for_Successful_Mentoring_-_FR.pdf">Conseils pour un mentorat réussi</a></p>
+                              <div class="row">
+                              <div class="col-md-2">
+                              </div>
+                              <div class="col-md-10"></div>                              
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <i class='fas fa-plus'></i>
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#montoring-pilot-mentee-resources"><h4>Ressources pour les mentorés / protégé (2)</h4></a>
+                      </h4>
+                    </div>
+                    <div id="montoring-pilot-mentee-resources" class="panel-collapse collapse">
+                      <div class="panel-body sub-panel-body">
+                        <ul>
+                          <li>
+                            <p><a href="https://www.gcpedia.gc.ca/gcwiki/images/c/ca/1_-_Formulaire_d%E2%80%99inscription_du_Mentor_-_FR.pdf">Formulaire d'inscription du mentoré / protégé</a></p>
+                            <p><a href="https://www.gcpedia.gc.ca/gcwiki/images/4/4e/Questions_for_your_Mentor_-_FR.pdf">Questions pour votre mentor </a></p>
+                            <div class="row">
+                              <div class="col-md-2">
+                              </div>
+                              <div class="col-md-10"></div>                              
+                            </div>
+                          </li>
+                          <li>                             
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <i class='fas fa-plus'></i>
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse-networking"><h4>Réseautage</h4></a>
+                  </h4>
+                </div>
+                <div id="collapse-networking" class="panel-collapse collapse">
+                  <div class="panel-body">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>Autres ressources</h4>
+          <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <i class='fas fa-plus'></i>
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse-learning-and-development"><h4>Ressources d'apprentissage et de perfectionnement</h4></a>
+                </h4>
+              </div>
+              <div id="collapse-learning-and-development" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>
+                    L'apprentissage et le perfectionnement sont l'expertise de nombreuses organisations telles que la Commission de la fonction publique et l'École de la fonction publique du Canada, et d'associations comme Developpement du professionnalisme en informatique et l'Association professionnelle des cadres supérieurs de la fonction publique du Canada (APEX).
+                  </p>
+                  <p>
+                    Veuillez trouver ci-dessous leurs pages web pour plus de sources. 
+                  </p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <button type="button" class="btn btn-primary">Developpement du professionnalisme en informatique</button>
+                    </div>
+                    <div class="col-md-6">
+                      <button type="button" class="btn btn-primary">Association des cadres professionnels de la fonction publique</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="custom-footer">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+                <li><b>Connectez-vous avec nous!</b></li>
+                <li><a>Événements à venir</a></li>
+                <li><a>Ce qui se passe </a></li>
+                <li><a>Suivez-nous sur Twitter </a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li><b>Vous avez des questions ?</b></li>
+                <li><a>Contactez-nous</a></li>
+              </ul>
+            </div>
+            <div class="col-md-5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
