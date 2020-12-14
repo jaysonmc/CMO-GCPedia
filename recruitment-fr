@@ -1,0 +1,859 @@
+<html>
+  <!--
+    This page was created by Jayson McIntosh
+-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>Change Management Office Recruitment GCpedia</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+      body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        -ms-overflow-x: hidden;
+      }
+
+      .team-label a {
+        text-decoration: none;
+      }
+
+      a,
+      a:visited {
+        color: ivory;
+        text-decoration: underline;
+      }
+
+      .footer-sub-component-label:hover a {
+        color: ivory;
+        text-decoration: underline;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      ul {
+        list-style-type: none;
+        list-style: none;
+      }
+
+      #custom-footer li {
+        font-size: 20px;
+        color: #ffffff;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      h1 {
+        color: #ffffff;
+      }
+
+      h4 {
+        font-weight: 900;
+      }
+
+      hr {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        border: 0;
+        clear: both;
+        display: block;
+        width: 96%;
+        background-color: black;
+        height: 1px;
+      }
+
+      #super-body {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 10000;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: #fff;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.5s ease-in;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+      }
+
+      .team-label {
+        height: 190px;
+        padding-top: 130px;
+        background-size: contain;
+      }
+
+      .footer-sub-component-label {
+        padding-top: 17.5px;
+        text-align: center;
+        width: 100%;
+        margin-top: 70px;
+        background-color: #674c90;
+        opacity: 0.9;
+        height: 55px;
+      }
+
+      .team-grid-row-subtext {
+        margin-top: 15px;
+        margin-bottom: 25px;
+      }
+
+      .team-label-row {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .team-grid-row {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      #imit-title {
+        margin-bottom: 45px;
+      }
+
+      div#header,
+      #sub-header {
+        margin-bottom: 35px;
+      }
+
+      #imit-title ul li {
+        color: black;
+        font-size: 16px;
+      }
+
+      div#header {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/talentManagementBanner.jpg");
+        height: 375px;
+        margin-left: 10%;
+        width: 80%;
+        background-size: stretch;
+        background-position-y: -150px;
+      }
+
+      #header-label {
+        background-color: #363661;
+        height: 55px;
+        padding-top: 12px;
+      }
+
+      #header-label a {
+        font-size: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+
+      #header-label-right {
+        float: right;
+      }
+
+      #header-label-left {
+        float: left;
+      }
+
+      #sub-header {
+        height: 320px;
+        padding-top: 125px;
+        background-color: #363661;
+        width: 100%;
+        opacity: 0.9;
+      }
+
+      #community-management-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/communityManagement.jpeg");
+      }
+
+      #community-demographics-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/communityDemographics.jpeg");
+      }
+
+      #organizational-readiness-and-outreach-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/organizationalReadiniess.jpeg");
+      }
+
+      #talent-management-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/talentManagement.jpeg");
+      }
+
+      #recuitment-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/recruitment.jpeg");
+      }
+
+      #career-pathways-label {
+        background-image: url("https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/careerPathways.png");
+      }
+
+      #custom-footer {
+        height: 240px;
+        padding-top: 5px;
+        background-color: #363661;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 50px;
+      }
+
+      #breadcrumb {
+        font-size: 18px;
+        margin-left: 75px;
+        margin-top: 80px;
+      }
+
+      #breadcrumb p {
+        display: inline-block;
+        color: white;
+      }
+
+      .panel-group {
+        margin-bottom: 90px;
+      }
+
+      .panel-group {
+        margin-top: 25px;
+      }
+
+      .panel-group p, li {
+        color: ivory;
+      }
+
+      .panel-group h4 {
+        color: ivory;
+        padding: 0;
+        font-size: 18px;
+      }
+
+      .panel-group div.panel-heading {
+        background-color: #674c90;
+      }
+
+      .panel-group .panel-default {
+        background-color: #674c90;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .panel-heading a {
+        text-decoration: none;
+      }
+
+      .fa-plus {
+        font-size: 24px;
+        float: right;
+        color: ivory;
+        margin: auto;
+        margin-top: 12px;
+      }
+
+      .panel-default .panel-heading {
+        display: inline-block;
+        width: 100%;
+      }
+
+      .centre {
+        text-align: center;
+      }
+
+      #TmInfographic {
+        margin-top: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .panel-group > p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      #connect-with-us ul {
+        list-style-type: none;
+        list-style: none;
+      }
+
+      .fa-envelope {
+        color: white;
+        font-size: 18px;
+        margin-top: 11px;
+        margin-left: -4px;
+      }
+
+      #email-denis {
+        background-color: #1d2c4c;
+      }
+
+      #email-anna {
+        background-color: #674c90;
+      }
+
+      #email-team {
+        background-color: #edbb26;
+      }
+
+      .circle {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
+
+      #connect-with-us > h4 {
+        margin-bottom: 25px;
+      }
+
+      #learning-and-dev button {
+        height: 70px;
+        color: white;
+        background-color: #1d2c4c;
+        border-radius: 15px;
+      }
+
+      #collapse-meet-the-team .row p {
+        margin-left: 10%;
+        width: 100%;
+      }
+
+      #collapse-meet-the-team img {
+        width: 165px;
+        height: 140px;
+      }
+
+      #connect-with-us h2 {
+        color: black;
+      }
+
+      #share-pool-table table thead th {
+        background-color: #072131;
+        color: ivory;
+      }
+
+      #share-pool-table table tbody tr,
+      #share-pool-table table tbody th {
+        background-color: #363661;
+      }
+
+      #share-pool-table table tbody td {
+        padding-left: 20px;
+        color: ivory;
+      }
+
+      /* Commenting our gcpedia stuff */
+      #mw-panel,
+      #footer,
+      #mw-head {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="super-body">
+      <div id="header">
+        <div id="header-label">
+          <div id="header-label-left">
+            <a href="https://www.gcpedia.gc.ca"><b>GC</b>pedia</a>
+            <a href="#"><b>Accueuil</b></a>
+          </div>
+          <div id="header-label-right">
+            <a href="https://www.gcpedia.gc.ca/wiki/Temp_CMO_Dev_Recruitment">Français</a>
+          </div>
+        </div>
+        <div id="sub-header">
+          <h1 class="text-center"><b>Services de recrutement</b></h1>
+          <div id="breadcrumb">
+            <a href="#">Accueuil</a>
+            <p>&#9654;</p>
+            <a href="#">Recrutement</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h4 id="imit-title">
+            Qu’est-ce que le recrutement au bureau du dirigeant principal de l’information?
+          </h4>
+          <p>
+            Le programme de recrutement aide à attirer et à référer des candidats de qualité dans l’ensemble du GC. Nous appuyons directement la communauté de la GI/TI, le dirigeant principal de l'information du Canada en tant que chef fonctionnel de la communauté de la GI/TI et la Politique sur les services et le numérique.
+          </p>
+        </div>
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <i class="fas fa-plus"></i>
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapse-pools-and-procress"
+                  ><h4>Bassins et processus </h4></a
+                >
+              </h4>
+            </div>
+            <div
+              id="collapse-pools-and-procress"
+              class="panel-collapse collapse"
+            >
+              <div class="panel-body">
+                <p>Nos bassins :<p>
+                <ul>
+                  <li>Ont de nouveaux candidats qui se qualifient sur une base continue</li>
+                  <li>N’ont pas de date d’expiration</li>
+                  <li>N’ont pas de groupe et niveau assignés aux candidats</li>
+                </ul>
+                <p>
+                  C’est la responsabilité de l’organisation d’embauche de revoir le dossier du candidat pour déterminer un groupe et niveau pour une offre.
+                </p>
+                <p>
+                  En partenariat avec la Commission de la fonction publique, les processus de recrutement suivants ont été annoncés à l’externe.
+                </p>
+                <h4>Processus actuels</h4>
+                <p>
+                  <a
+                    href="https://psjobs-emploisfp.psc-cfp.gc.ca/psrs-srfp/applicant/page1800?toggleLanguage=fr&poster=1273786"
+                    >Femmes en Technologies (ouvert et continu)</a
+                  >
+                  <ul>
+                    <li>440 demandes de femmes citoyennes canadiennes en date du 3 novembre 2020</li>
+                  </ul>
+                </p>
+                <h4>
+                  Processus précédents  
+                </h4>
+                <a href="https://emploisfp-psjobs.cfp-psc.gc.ca/psrs-srfp/applicant/page1800?toggleLanguage=fr&poster=1356208">Carrières en gestion de l'information et en technologie de l'information (GI/TI) - Recrutement postsecondaire - 2019 (toujours en cours d'évaluation)</a>
+                <ul><li>
+                  769 demandes de citoyens canadiens, 186 étaient des femmes
+                </li></ul>
+                <a href="https://emploisfp-psjobs.cfp-psc.gc.ca/psrs-srfp/applicant/page1800?poster=1328984&toggleLanguage=fr">Carrières en gestion de l'information et en technologie de l'information (GI/TI) - été 2019 </a>
+                <ul><li>
+                  561 demandes de citoyens canadiens, 123 étaient des femmes  
+                </li></ul>
+                <a href="https://emploisfp-psjobs.cfp-psc.gc.ca/psrs-srfp/applicant/page1800?poster=1208332&toggleLanguage=fr">Carrières en gestion de l'information et en technologie de l'information (GI/TI) - Recrutement postsecondaire - 2018 </a>
+                <ul><li>
+                  762 demandes de citoyens canadiens, 193 étaient des femmes 
+                </li></ul>
+                <a href="https://emploisfp-psjobs.cfp-psc.gc.ca/psrs-srfp/applicant/page1800?poster=1208332&toggleLanguage=fr">Carrières en gestion de l'information et en technologie de l'information (GI/TI) - Recrutement postsecondaire - 2017</a>
+                <ul><li>
+                  575 demandes de citoyens canadiens, 153 étaient des femmes  
+                </li></ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <i class="fas fa-plus"></i>
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  href="#collapse-candidate-assessment"
+                  ><h4>Évaluation des candidats</h4></a
+                >
+              </h4>
+            </div>
+            <div
+              id="collapse-candidate-assessment"
+              class="panel-collapse collapse"
+            >
+              <div class="panel-body">
+                <p>
+                  Suite à une analyse des besoins de la collectivité, les compétences suivantes ont été identifiées à des fins d’évaluation :
+                </p>
+                <ul>
+                  <li>Raisonnement analytique</li>
+                  <li>Orientation client</li>
+                  <li>Travail d’équipe</li>
+                  <li>Communication</li>
+                </ul>
+                <p>
+                  Ces compétences sont évaluées au moyen de trois étapes: 
+                </p>
+                <ol>
+                  <li> <a href="#step1"></a> Entrevue de groupe </li>
+                  <li> <a href="#step2"></a> Auto-évaluation </li>
+                  <li> <a href="#step3"></a> Vérification des références </li>
+                </ol>
+                <h4>Étape 1 – Entrevue de groupe</h4>
+                <p>
+                  Le concept de l’entrevue de groupe a été validé par le Centre de psychologie du personnel de la Commission de la fonction publique. 
+                </p>
+                <p>L’entrevue de groupe : </p>
+                <ul>
+                  <li>Comprend 4 candidats</li>
+                  <li>Comprend 12 questions situationnelles</li>
+                  <li>Dure jusqu’à 2.5 heures</li>
+                </ul>
+                <p>
+                  Les membres du Comité de sélection sont des employés du BDPI et des bénévoles de la collectivité.
+                </p>
+                <p>
+                  Les candidats doivent obtenir une note de passage de 60% pour chacune des 3 compétences pendant l'entrevue afin de passer à la prochaine étape. 
+                </p>
+                <h4>Étape 2 – Auto-évaluation</h4>
+                <p>
+                  Les candidats qui réussissent l’entrevue passent à l’étape de l’auto-évaluation.
+                </p>
+                <p>
+                  L’auto-évaluation :
+                </p>
+                <ul>
+                  <li>Définit les 3 compétences évaluées : raisonnement analytique, orientation client et travail d’équipe.</li>
+                  <li>Exige des candidats qu’ils fournissent des exemples de la façon dont ils ont démontré les 3 compétences.</li>
+                  <li>Exige que les candidats fournissent le nom de 2 références par compétence qui peuvent valider leurs exemples. </li>
+                </ul>
+                <h4>Étape 3 – Vérification des références</h4>
+                <p>
+                  À cette étape, nous envoyons le formulaire de vérification des références aux références du candidat pour valider les exemples fournis et répondre à d'autres questions de vérification des références.
+                </p>
+                <p>
+                  <h4>Évaluation additionnelle</h4>
+                </p>
+                <p>
+                  Avant de procéder à l’embauche d’un candidat, nous recommandons d'organiser une rencontre informelle. Si une organisation détermine que des examens supplémentaires sont requis, il est possible pour l'organisation de mener l'évaluation. Alors, c’est la responsabilité de l’organisation d’embauche de déterminer si elle considère que les candidats dans notre bassin sont entièrement ou partiellement évalués.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <i class="fas fa-plus"></i>
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  href="#collapse-hiring-process"
+                  ><h4>Processus d’embauche </h4></a
+                >
+              </h4>
+            </div>
+            <div
+              id="collapse-hiring-process"
+              class="panel-collapse collapse"
+            >
+              <div class="panel-body">
+                <p>
+                  Les organisations qui sont intéressées à embaucher un candidat à partir de notre bassin reçoivent :
+                </p>
+                <ul>
+                  <li>Demande de candidature </li>
+                  <li>CV</li>
+                  <li>Auto-évaluation </li>
+                  <li>Références </li>
+                  <li>Résultats de l’entrevue</li>
+                </ul>
+                <h4>Offres </h4>
+                <p>
+                  Typiquement, les postes offerts à partir de notre bassin sont à durée déterminée ou indéterminée, à travers le Canada (la plupart dans la région de la capitale nationale) et vont de CS-01 à CS-04. 
+                </p>
+                <p>
+                  L'Énoncé de critères de mérite utilisé pour obtenir l'autorisation de priorité est, dans certains cas, modifié de façon à ce qu’il tienne compte des critères d'expérience que les candidats possèdent en ce qui a trait aux atouts dans la demande et dans le cadre de leur curriculum vitae. Les organisations d'embauche doivent déterminer le niveau de poste approprié pour un candidat, puisque les affiches d’emploi ne stipulent aucun groupe ou niveau.   
+                </p>
+                <p>
+                  Une fois qu’un candidat est embauché, une copie de la lettre d’offre signée doit nous être envoyée.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <i class="fas fa-plus"></i>
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  href="#collapse-conneCSion"
+                ><h4>ConneCSion</h4>
+                </a>
+              </h4>
+            </div>
+            <div
+              id="collapse-conneCSion"
+              class="panel-collapse collapse"
+            >
+              <div class="panel-body">
+                <img src="https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/conneCSionLogo.png" alt="conneCSion logo" />
+                <p>
+                  ConneCSIon est un événement de recrutement qui a lieu quelques fois par année pour les candidats dans notre bassin et des gestionnaires d’embauche qui sont à la recherche de candidats talentueux.
+                </p>
+                <h4>Format</h4>
+                <p>
+                  Nous travaillons toujours à faire de ConneCSion un événement efficace et un succès. Basé sur notre expérience et les commentaires que nous avons reçus, nous avons constaté qu’une combinaison de réseautage et des entrevues organisées fonctionne très bien. Cela signifie avoir un espace ouvert dédié au réseautage et des salles désignées pour les entrevues organisées. 
+                </p>
+                <p>
+                  <b>Remarque :<b> En raison du COVID-19, notre événement le plus récent était entièrement virtuel.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <i class="fas fa-plus"></i>
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  href="#collapse-pools"
+                ><h4>Bassins actuels de recrutement de la collectivité en GI/TI</h4>
+                </a>
+              </h4>
+            </div>
+            <div
+              id="collapse-pools"
+              class="panel-collapse collapse"
+            >
+              <div id="share-pool-table" class="panel-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Ministère</th>
+                      <th scope="col">Personne-ressource</th>
+                      <th scope="col">CS-01</th>
+                      <th scope="col">CS-02</th>
+                      <th scope="col">CS-03</th>
+                      <th scope="col">CS-04</th>
+                      <th scope="col">CS-05</th>
+                      <th style="width: 125px" scope="col">Bassin finalisé </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Environnement et Changement climatique Canada</td>
+                      <td>anna.stott@canada.ca</td>
+                      <td></td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Environnement et Changement climatique Canada</td>
+                      <td>catherine.feeny@canada.ca</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>X</td>
+                      <td>4 candidats</td>
+                    </tr>
+                    <tr>
+                      <td>Immigration, Réfugiés et Citoyenneté Canada</td>
+                      <td>alexandra.quinnprudhomme@cic.gc.ca</td>
+                      <td></td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Ressources naturelles Canada</td>
+                      <td>christine.myatt@canada.ca</td>
+                      <td></td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Ressources naturelles Canada</td>
+                      <td>christine.myatt@canada.ca</td>
+                      <td></td>
+                      <td></td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Ressources naturelles Canada</td>
+                      <td>christine.myatt@canada.ca</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Services partagés Canada</td>
+                      <td>amelie.desjardins@canada.ca</td>
+                      <td></td>
+                      <td></td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                      <td>4 candidats</td>
+                    </tr>
+                    <tr>
+                      <td>Transports Canada</td>
+                      <td>abdinaser.mohamoud@tc.gc.ca</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Secrétariat du Conseil du Trésor du Canada</td>
+                      <td>anna.wong@tbs-sct.gc.ca</td>
+                      <td>X</td>
+                      <td>X</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Secrétariat du Conseil du Trésor du Canada</td>
+                      <td>malvina.nedko@tbs-sct.gc.ca</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>X</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">  
+              <i class="fas fa-plus"></i>
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  href="#collapse-share-pools"
+                ><h4>Partagez vos bassins</h4>
+                </a>
+              </h4>
+            </div>
+            <div
+              id="collapse-share-pools"
+              class="panel-collapse collapse"
+            >
+              <div class="panel-body">
+                <p>
+                  Nous voulons afficher tous les bassins en GI/TI que vous souhaitez partager avec la collectivité. En partageant votre travail acharné, nous pouvons tous éviter la duplication des efforts. 
+                </p>
+                <p>
+                  Si vous avez un bassin que vous aimeriez partager avec d’autres organisations, veuillez communiquer avec nous.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <i class="fas fa-plus"></i>
+              <h4 class="panel-title">
+                <a
+                  data-toggle="collapse"
+                  href="#collapse-meet-the-team"
+                ><h4>Rencontrez l’équipe</h4>
+                </a>
+              </h4>
+            </div>
+            <div
+              id="collapse-meet-the-team"
+              class="panel-collapse collapse"
+            >
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-2">
+                    <img src="https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/anne-marie-emoji.png" alt="An emoji of Anne-Marie's face" />
+                    <p>
+                      Anne-Marie Kirouac
+                      <i>Directrice adjointe, Politiques et programmes</i>
+                    </p>
+                  </div>
+                  <div class="col-md-2">
+                    <img src="https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/corinne-fraser-emoji.png" alt="An emoji of Anne-Marie's face" />
+                    <p>
+                      Corinne Fraser
+                      <i>Gestionnaire des services de projets</i>
+                    </p>
+                  </div>
+                  <div class="col-md-2">
+                    <img src="https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/melanie-desjardins-emoji.png" alt="An emoji of Anne-Marie's face" />
+                    <p>
+                      Mélanie Desjardins
+                      <i>Coordonnatrice de projets</i>
+                    </p>
+                  </div>
+                  <div class="col-md-2">
+                    <img src="https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/helene-levesque-emoji.png" alt="An emoji of Anne-Marie's face" />
+                    <p>
+                      Hélène Levesque
+                      <i>Agente de recherche</i>
+                    </p>
+                  </div>
+                  <div class="col-md-2">
+                    <img src="https://raw.githubusercontent.com/jaysonmc/CMO-GCPedia/main/images/julie-harrison-emoji.png" alt="An emoji of Anne-Marie's face" />
+                    <p>
+                      Julie Harrison
+                      <i>Recruteure externe</i>
+                    </p>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+                <a href="mailto:recruitmentIMIT-recrutementGITI@tbs-sct.gc.ca"><h2>Contactez-nous</h2></a>
+                <p>
+                  Voulez-vous en savoir plus sur nos initiatives de recrutement? Cherchez-vous à doter des postes à partir de notre bassin?  Envoyez-nous un 
+                  <a href="mailto:recruitmentIMIT-recrutementGITI@tbs-sct.gc.ca">message</a>, ça nous ferait plaisir de vous parler! 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="connect-with-us" class="container">
+          <div class="row">
+            
+          </div>
+        </div>
+      </div>
+      <div id="custom-footer">
+        <div class="row">
+          <div class="col-md-4">
+            <ul>
+            <li><a>Suivez-nous sur Twitter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li><a>Contactez-nous</a></li>
+            </ul>
+          </div>
+          <div class="col-md-5"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
